@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Saira:wght@200;300;400;500;600;700;800;900&display=swap");
+
+.nav {
+  padding: 35px 50px;
+
+  /* ff 3.6+ */
+  background: -moz-linear-gradient(0deg, #0d1117 11%, #000000fc 100%);
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-linear-gradient(0deg, #0d1117 11%, #000000fc 100%);
+
+  /* opera 11.10+ */
+  background: -o-linear-gradient(0deg, #0d1117 11%, #000000fc 100%);
+
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0D1117', endColorstr='#000000', GradientType=1);
+
+  /* ie 10+ */
+  background: -ms-linear-gradient(0deg, #0d1117 11%, #000000fc 100%);
+
+  /* global 94%+ browsers support */
+  background: linear-gradient(0deg, #0d1117 11%, #000000fc 100%);
+
+  a {
+    font-family: "Saira", sans-serif;
+    font-size: 17px;
+    display: flex;
+    span{
+      display: none;
+    }
+  }
+}

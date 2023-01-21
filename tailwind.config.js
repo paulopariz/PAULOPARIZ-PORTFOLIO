@@ -4,7 +4,11 @@ module.exports = {
     "./public/index.html",
     "./src/**/*.{html,js,vue}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        chopsic: ['Chopsic'],
+      }
+    },
   },
   plugins: [],
 }
