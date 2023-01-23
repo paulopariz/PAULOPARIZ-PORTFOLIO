@@ -1,6 +1,6 @@
 <template>
-  <nav class="-mt-12 float-right">
-    <ul class="flex items-center gap-28 pl-20 pr-32 py-7 font-sfera">
+  <nav class="-mt-24 float-right">
+    <ul class="flex items-center gap-28 pl-20 pr-32 font-sfera">
       <li>SOBRE</li>
       <li>HABILIDADES</li>
       <li>PROJETOS</li>

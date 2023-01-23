@@ -1,7 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;500;600;700&display=swap");
+
 .bg {
-    background: radial-gradient(
-        rgba(0, 0, 0, 0.283),
-        rgb(8,8,8)
-    ), url("../../assets/img/ooorganize.svg");
-    height: 60vh;
+  background: radial-gradient(rgba(0, 0, 0, 0.283), rgb(8, 8, 8)),
+    url("../../assets/img/ooorganize2.svg");
+  height: 60vh;
+  margin-top: -100px;
+
+  h1 {
+    text-shadow: 5px 6px 18px rgba(244, 244, 244, 0.203);
+    z-index: 1;
   }
+
+  .github {
+    width: 37.5%;
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h2 {
+        color: rgb(248, 248, 248);
+        font-size: 38px;
+      }
+      span{
+        letter-spacing: 1.4px;
+        font-size: 13px;
+      }
+    }
+  }
+
+  button{ 
+    margin-top: 40px;
+    width: 37.5%;
+    background-color: #3419e8;
+    padding: 17px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 3px;
+    clip-path: polygon(
+        2rem 0,
+        calc(100% + 2rem) 0,
+        calc(100% - 2rem) 100%,
+        -2rem 100%        
+    );
+  }
+
+  .eclipse {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background-color: #3419e8;
+    margin-top: 250px;
+    filter: blur(247px);
+    z-index: 0;
+    margin-left: 150px;
+  }
+}

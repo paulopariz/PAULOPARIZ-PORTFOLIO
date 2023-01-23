@@ -3,7 +3,7 @@
 
 nav {
   ul{
-    background-color: black;
+    // background-color: rgba(0, 0, 0, 0.908);
     clip-path: polygon(5% 0,100% 0,100% 100%,5% 100%,0 50%);
     li{
       font-size: 14px;
@@ -11,12 +11,12 @@ nav {
         content: '';
         width: 7px;
         height: 7px;
-        background-color: #994898;
+        background-color: #1a0cc5;
         position: absolute;
         margin-top: 8px;
         margin-left: -18px;
         rotate: 45deg;
-        box-shadow: 0px 0px 14px 1px #f18cec;   
+        box-shadow: 0px 0px 14px 1px #3419e8;   
       }
 
     }
