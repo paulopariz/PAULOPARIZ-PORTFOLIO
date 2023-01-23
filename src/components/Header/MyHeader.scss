@@ -2,7 +2,7 @@
 
 .bg {
   background: radial-gradient(rgba(0, 0, 0, 0.283), rgb(8, 8, 8)),
-    url("../../assets/img/ooorganize2.svg");
+    url("../../assets/img/ooorganize.svg");
   height: 60vh;
   margin-top: -100px;
 
@@ -22,28 +22,37 @@
         color: rgb(248, 248, 248);
         font-size: 38px;
       }
-      span{
+      span {
         letter-spacing: 1.4px;
         font-size: 13px;
       }
     }
   }
 
-  button{ 
+  a {
+    gap: 15px;
     margin-top: 40px;
     width: 37.5%;
-    background-color: #3419e8;
+    background: rgb(52, 25, 232);
+    background: linear-gradient(
+      45deg,
+      rgba(52, 25, 232, 1) 57%,
+      rgba(89, 53, 238, 1) 77%
+    );
     padding: 17px 0;
     display: flex;
     align-items: center;
     justify-content: center;
     letter-spacing: 3px;
-    clip-path: polygon(
-        2rem 0,
-        calc(100% + 2rem) 0,
-        calc(100% - 2rem) 100%,
-        -2rem 100%        
-    );
+
+    clip-path: polygon(2rem 0, calc(100% + 2rem) 0, calc(100% - 2rem) 100%, -2rem 100%);
+    img {
+      width: 21px;
+      margin-top: 3px;
+    }
+
+    &:hover {
+    }
   }
 
   .eclipse {
@@ -55,5 +64,86 @@
     filter: blur(247px);
     z-index: 0;
     margin-left: 150px;
+  }
+}
+
+
+.mouse_scroll {
+  display: block;
+  margin: 0 auto;
+  width: 24px;
+  height: 80px;
+  margin-top: 185px;
+}
+
+.m_scroll_arrows {
+  display: block;
+  width: 5px;
+  height: 5px;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+
+  border-right: 2px solid #5935ee;
+  border-bottom: 2px solid #5935ee;
+  margin: 0 0 3px 4px;
+
+  width: 16px;
+  height: 16px;
+}
+
+.one {
+  margin-top: 1px;
+}
+
+.one,
+.two,
+.three {
+  -webkit-animation: mouse-scroll 1s infinite;
+  -moz-animation: mouse-scroll 1s infinite;
+  animation: mouse-scroll 1s infinite;
+}
+
+.one {
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
+  -webkit-animation-direction: alternate;
+
+  animation-direction: alternate;
+  animation-delay: alternate;
+}
+
+.two {
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  -webkit-animation-direction: alternate;
+
+  animation-delay: 0.2s;
+  animation-direction: alternate;
+
+  margin-top: -6px;
+}
+
+.three {
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+  -webkit-animation-direction: alternate;
+
+  animation-delay: 0.3s;
+  animation-direction: alternate;
+
+  margin-top: -6px;
+}
+
+
+@keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
   }
 }

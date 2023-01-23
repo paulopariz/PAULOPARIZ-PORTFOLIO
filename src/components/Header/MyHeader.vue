@@ -19,9 +19,18 @@
             <span>Repositórios</span>
           </div>
         </div>
-        <button class="font-sfera">SEGUIR GITHUB</button>
+        <a href="" class="font-sfera">
+          SEGUIR GITHUB <img src="../../assets/img/icongithub.svg" alt="" />
+        </a>
       </div>
     </header>
+    <div class="mouse_scroll">
+      <div>
+        <span class="m_scroll_arrows one"></span>
+        <span class="m_scroll_arrows two"></span>
+        <span class="m_scroll_arrows three"></span>
+      </div>
+    </div>
   </div>
 </template>
 
