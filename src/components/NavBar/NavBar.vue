@@ -1,17 +1,12 @@
 <template>
-  <div class="nav flex items-center justify-between">
-    <div class="flex gap-16">
-      <a href="">SOBRE</a>
-      <a href="">HABILIDADES</a>
-    </div>
-    <div>
-      <p class="font-chopsic text-5xl">P</p>
-    </div>
-    <div class="flex gap-16">
-      <a href=""> PROJETOS</a>
-      <a href="" class="">CONTATO</a>
-    </div>
-  </div>
+  <nav class="-mt-12 float-right">
+    <ul class="flex items-center gap-28 pl-20 pr-32 py-7 font-sfera">
+      <li>SOBRE</li>
+      <li>HABILIDADES</li>
+      <li>PROJETOS</li>
+      <li>CONTATO</li>
+    </ul>
+  </nav>
 </template>
 
 <script>

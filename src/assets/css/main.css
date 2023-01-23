@@ -6,3 +6,8 @@
     font-family: chopsic;
     src: url(../fonts/Chopsic.otf);
 }
+
+@font-face {
+    font-family: sfera;
+    src: url(../fonts/Sfera.ttf);
+}

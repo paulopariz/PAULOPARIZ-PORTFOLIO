@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         chopsic: ['Chopsic'],
+        sfera: ['Sfera'],
       }
     },
   },
