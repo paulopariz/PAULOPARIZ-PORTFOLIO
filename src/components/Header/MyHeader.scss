@@ -3,7 +3,6 @@
 .bg {
   background: radial-gradient(rgba(0, 0, 0, 0.283), rgb(8, 8, 8)),
     url("../../assets/img/ooorganize.svg");
-  height: 60vh;
   margin-top: -100px;
 
   h1 {
@@ -39,7 +38,7 @@
       rgba(52, 25, 232, 1) 57%,
       rgba(89, 53, 238, 1) 77%
     );
-    padding: 17px 0;
+    padding: 23px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,13 +50,11 @@
       margin-top: 3px;
     }
 
-    &:hover {
-    }
   }
 
   .eclipse {
-    width: 280px;
-    height: 280px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     background-color: #3419e8;
     margin-top: 250px;

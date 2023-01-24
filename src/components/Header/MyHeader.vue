@@ -1,7 +1,7 @@
 <template>
   <div class="bg">
     <header class="mt-24 container m-auto">
-      <h1 class="text-7xl absolute top-1/4 font-sfera">PAULO PARIZ</h1>
+      <h1 class="text-7xl absolute top-1/4 font-sfera">{{ infos.name }}</h1>
       <div class="eclipse"></div>
 
       <div>

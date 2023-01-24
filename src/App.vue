@@ -1,7 +1,10 @@
 <template>
   <div>
     <NavBar />
+
     <MyHeader />
+
+    <MySociais />
 
     <div class="container m-auto"></div>
   </div>
@@ -10,10 +13,11 @@
 <script>
 import MyHeader from "./components/Header/MyHeader.vue";
 import NavBar from "./components/NavBar/NavBar.vue";
+import MySociais from "./components/Sociais/MySociais.vue";
 
 export default {
   name: "App",
-  components: { NavBar, MyHeader },
+  components: { NavBar, MyHeader, MySociais },
 };
 </script>
 
