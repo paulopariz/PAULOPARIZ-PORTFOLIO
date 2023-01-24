@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-48 mb-20 bg">
+  <div class="mt-48 mb-20">
     <h1 class="font-sfera text-5xl ml-11">SOBRE</h1>
 
     <section class="about ml-44 mt-14">
