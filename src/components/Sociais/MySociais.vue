@@ -43,21 +43,14 @@ ul {
   border-right: none;
   border-left: none;
   border-width: 2px;
-  border-image: linear-gradient(
-      45deg,
-      rgba(8, 8, 8, 1) 10%,
-      rgba(69, 37, 210, 1) 50%,
-      rgba(8, 8, 8, 1) 95%
-    )
-    1;
-  margin-bottom: 50px;
+  border-image: linear-gradient(273deg, #080808 5%, #4525d2 50%, #080808 95%) 1;
 
   li {
-    img {
+    a {
       letter-spacing: 1.4px;
-    }
-    img {
-      opacity: 0.7;
+      img {
+        opacity: 0.7;
+      }
     }
   }
 }

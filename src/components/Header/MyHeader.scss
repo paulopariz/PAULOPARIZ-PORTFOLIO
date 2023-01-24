@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;500;600;700&display=swap");
 
 .bg {
-  background: radial-gradient(rgba(0, 0, 0, 0.283), rgb(8, 8, 8)),
-    url("../../assets/img/ooorganize.svg");
+  background: radial-gradient(ellipse at center, rgba(8, 8, 8, 0) 0%, rgba(8, 8, 8, 0) 17%, rgba(8, 8, 8, 0) 18%, rgba(8, 8, 8, 1) 70%, rgba(8, 8, 8, 1) 100%),
+    url("../../assets/img/bgheader.svg");
   margin-top: -100px;
 
   h1 {
@@ -12,6 +12,7 @@
 
   .github {
     width: 37.5%;
+
     div {
       display: flex;
       flex-direction: column;
@@ -21,6 +22,7 @@
         color: rgb(248, 248, 248);
         font-size: 38px;
       }
+
       span {
         letter-spacing: 1.4px;
         font-size: 13px;
@@ -33,21 +35,25 @@
     margin-top: 40px;
     width: 37.5%;
     background: rgb(52, 25, 232);
-    background: linear-gradient(
-      45deg,
-      rgba(52, 25, 232, 1) 57%,
-      rgba(89, 53, 238, 1) 77%
-    );
+    background: linear-gradient(45deg,
+        rgba(52, 25, 232, 1) 57%,
+        rgba(89, 53, 238, 1) 77%);
     padding: 23px 0;
     display: flex;
     align-items: center;
     justify-content: center;
     letter-spacing: 3px;
-
+    transition: ease .3s;
     clip-path: polygon(2rem 0, calc(100% + 2rem) 0, calc(100% - 2rem) 100%, -2rem 100%);
+
     img {
       width: 21px;
       margin-top: 3px;
+    }
+    &:hover{
+      opacity: 0.9;
+      clip-path: polygon(-2rem 0, calc(100% + -2rem) 0, calc(100% + 2rem) 100%, 2rem 100%);
+
     }
 
   }
@@ -56,9 +62,10 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background-color: #3419e8;
+    background: rgb(0, 0, 152);
+    background: linear-gradient(180deg, rgba(0, 0, 152, 1) 16%, rgba(53, 25, 231, 1) 86%);
     margin-top: 250px;
-    filter: blur(247px);
+    filter: blur(175px);
     z-index: 0;
     margin-left: 150px;
   }
@@ -77,8 +84,10 @@
   display: block;
   width: 5px;
   height: 5px;
-  -ms-transform: rotate(45deg); /* IE 9 */
-  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Chrome, Safari, Opera */
   transform: rotate(45deg);
 
   border-right: 2px solid #5935ee;
@@ -137,9 +146,11 @@
   0% {
     opacity: 0;
   }
+
   50% {
     opacity: 0.5;
   }
+
   100% {
     opacity: 1;
   }

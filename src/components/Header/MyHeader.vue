@@ -55,4 +55,4 @@ export default {
 };
 </script>
 
-<style src="./MyHeader.scss" lang="scss" />
+<style src="./MyHeader.scss" lang="scss" scoped />

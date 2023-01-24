@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira:wght@200;300;400;500;600;700;800;900&display=swap");
+
+h1 {
+  letter-spacing: 1.3px;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-color: #1a0cc5;
+    position: absolute;
+    rotate: 45deg;
+    box-shadow: 0px 0px 14px 1px #3419e8;
+    margin-left: -40px;
+    margin-top: 10px;
+  }
+}
+
+
+section{
+  border-image: linear-gradient(360deg, #080808 2%, #4525d2 10%, #080808 100%) 1;  border-style: solid;
+  border-width: 3px;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  padding: 0 0 0 40px ;
+  h2{
+    color: #3419e8;
+    font-size: 35px;
+    font-family: sfera;
+    text-shadow: 0px 0px 7px #3c1fdee3;  
+  }
+  p{
+    font-family: 'Saira', sans-serif;
+    font-size: 21px;
+    margin-top: 13px;
+    letter-spacing: 1px;
+    color: rgb(179, 179, 179);
+    
+  }
+
+}

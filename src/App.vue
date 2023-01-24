@@ -6,18 +6,21 @@
 
     <MySociais />
 
-    <div class="container m-auto"></div>
+    <div class="container m-auto">
+      <AboutMe />
+    </div>
   </div>
 </template>
 
 <script>
+import AboutMe from "./components/About/AboutMe.vue";
 import MyHeader from "./components/Header/MyHeader.vue";
 import NavBar from "./components/NavBar/NavBar.vue";
 import MySociais from "./components/Sociais/MySociais.vue";
 
 export default {
   name: "App",
-  components: { NavBar, MyHeader, MySociais },
+  components: { NavBar, MyHeader, MySociais, AboutMe },
 };
 </script>
 
