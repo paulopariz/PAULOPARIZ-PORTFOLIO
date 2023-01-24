@@ -7,19 +7,19 @@
       <div>
         <div class="github flex items-center justify-between mt-16 font-sfera">
           <div>
-            <h2>30</h2>
+            <h2>{{ infos.followers }}</h2>
             <span>Seguidores</span>
           </div>
           <div>
-            <h2>87</h2>
+            <h2>{{ infos.following }}</h2>
             <span>Seguindo</span>
           </div>
           <div>
-            <h2>22</h2>
+            <h2>{{ infos.public_repos }}</h2>
             <span>Repositórios</span>
           </div>
         </div>
-        <a href="" class="font-sfera">
+        <a href="https://github.com/paulopariz" class="font-sfera">
           SEGUIR GITHUB <img src="../../assets/img/icongithub.svg" alt="" />
         </a>
       </div>
@@ -35,8 +35,23 @@
 </template>
 
 <script>
+import api from "../../api/user";
+
 export default {
   name: "MyHeader",
+
+  data() {
+    return {
+      infos: [],
+    };
+  },
+
+  mounted() {
+    api.list().then((response) => {
+      console.log(response.data);
+      this.infos = response.data;
+    });
+  },
 };
 </script>
 
