@@ -2,21 +2,21 @@ h1 {
     letter-spacing: 1.3px;
     display: flex;
     align-items: center;
-  
-    &::before {
-      content: "";
-      width: 14px;
-      height: 14px;
-      background-color: #1a0cc5;
-      position: absolute;
-      rotate: 45deg;
-      box-shadow: 0px 0px 14px 1px #3419e8;
-      margin-left: -40px;
-      margin-top: 10px;
-    }
-  }
 
-  button{
+    &::before {
+        content: "";
+        width: 14px;
+        height: 14px;
+        background-color: #1a0cc5;
+        position: absolute;
+        rotate: 45deg;
+        box-shadow: 0px 0px 14px 1px #3419e8;
+        margin-left: -40px;
+        margin-top: 10px;
+    }
+}
+
+button {
     font-family: sfera;
     letter-spacing: 1px;
     font-size: 14px;
@@ -26,8 +26,32 @@ h1 {
     border-image: linear-gradient(52deg, #080808 5%, #4525d2 50%, #080808 95%) 1;
     transition: ease 0.3s;
 
-    &:hover{
+    &:hover {
+        background: radial-gradient(ellipse at center, rgba(7, 7, 7, 0) 0%, rgba(7, 7, 7, 0) 27%, rgba(7, 7, 7, 1) 88%, rgba(8, 8, 8, 1) 100%),
+            url("../../assets/img/bgheader.svg");
+        background-size: cover;
         box-shadow: 0px 0px 14px 0px #3519e83c;
         border-image: linear-gradient(150deg, #080808 5%, #4525d2 50%, #080808 95%) 1;
     }
-}  
+}
+
+section{
+    .line {
+        width: 3px;
+        background: #4525d2;
+    }
+
+    .circle{
+        font-size: 10px;
+        letter-spacing: 1.3px;
+        background-color: #4525d2 ;
+    }
+
+    .tech{
+        border-style: solid;
+        border-width: 2px;
+        background-color: transparent;
+        border-image: linear-gradient(150deg, #080808 5%, #4525d2 50%, #080808 95%) 1;
+        
+    }
+}
