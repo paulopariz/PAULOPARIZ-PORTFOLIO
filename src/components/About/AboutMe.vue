@@ -5,7 +5,7 @@
     <section class="about ml-44 mt-14">
       <div v-for="obj in about" :key="obj" class="flex items-center gap-5 mb-8">
         <h2>{{ obj.position }}</h2>
-        <p>{{ obj.desc }}</p>
+        <p class="text-gray-600">{{ obj.desc }}</p>
       </div>
     </section>
   </div>
