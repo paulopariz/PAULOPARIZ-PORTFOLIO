@@ -3,14 +3,48 @@
     <h1 class="font-sfera text-5xl ml-11">TECNOLOGIAS</h1>
 
     <div class="mt-16 flex justify-center items-center gap-24">
-      <button>Front-end</button>
-      <button>Back-end</button>
+      <button @click="clickOpenFront">Front-end</button>
+      <button @click="clickOpenBack">Back-end</button>
     </div>
 
     <section class="text-gray-600 body-font">
       <div class="container px-5 py-24 mx-auto flex flex-wrap">
         <div
+          v-show="openFront"
           v-for="obj in techsFront"
+          :key="obj"
+          class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto"
+        >
+          <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+            <div class="line h-full pointer-events-none"></div>
+          </div>
+          <div
+            class="flex-shrink-0 w-8 h-8 -ml-1 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 font-sfera circle"
+          >
+            {{ obj.position }}
+          </div>
+          <div
+            class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row"
+          >
+            <div
+              class="tech flex-shrink-0 w-28 h-28 rounded-full inline-flex items-center justify-center"
+            >
+              <img :src="obj.icon" class="w-12" alt="" />
+            </div>
+            <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+              <h2 class="font-medium title-font text-gray-300 mb-1 text-xl">
+                {{ obj.tech }}
+              </h2>
+              <p class="leading-relaxed text-gray-600">
+                {{ obj.desc }}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          v-show="openBack"
+          v-for="obj in techsBack"
           :key="obj"
           class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto"
         >
@@ -51,6 +85,9 @@ export default {
 
   data() {
     return {
+      openFront: true,
+      openBack: false,
+
       techsFront: [
         {
           position: "01",
@@ -109,7 +146,42 @@ export default {
             "Git é um sistema de controle de versão open-source. Ele é utilizado para a criação de um histórico de alterações em código-fonte de projetos de desenvolvimento de software.",
         },
       ],
+
+      techsBack: [
+        {
+          position: "01",
+          icon: require("../../assets/img/iconPhp.svg"),
+          tech: "PHP",
+          desc:
+            "PHP é uma linguagem de programação voltada para o desenvolvimento de aplicações para a web e para criar sites, favorecendo a conexão entre os servidores e a interface do usuário.",
+        },
+        {
+          position: "02",
+          icon: require("../../assets/img/iconLaravel.svg"),
+          tech: "Laravel",
+          desc:
+            "Laravel é um framework PHP gratuito e de código aberto, utilizado no desenvolvimento de sistemas para web.",
+        },
+        {
+          position: "03",
+          icon: require("../../assets/img/iconMysql.svg"),
+          tech: "MySql",
+          desc:
+            "O MySQL é um sistema de gerenciamento de banco de dados, que utiliza a linguagem SQL como interface.",
+        },
+      ],
     };
+  },
+
+  methods: {
+    clickOpenFront() {
+      this.openFront = true;
+      this.openBack = false;
+    },
+    clickOpenBack() {
+      this.openBack = true;
+      this.openFront = false;
+    },
   },
 };
 </script>
