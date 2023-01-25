@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Saira:wght@200;300;400;500;600;700;800;900&display=swap");
+@import "../../assets/scss/patter.scss";
 
 h1 {
   letter-spacing: 1.3px;
@@ -6,23 +7,13 @@ h1 {
   align-items: center;
 
   &::before {
-    content: "";
-    width: 14px;
-    height: 14px;
-    background-color: #1a0cc5;
-    position: absolute;
-    rotate: 45deg;
-    box-shadow: 0px 0px 14px 1px #3419e8;
-    margin-left: -40px;
-    margin-top: 10px;
+    @include befores;
   }
 }
 
 
 section{
-  border-image: linear-gradient(360deg, #080808 2%, #4525d2 10%, #080808 100%) 1;  
-  border-style: solid;
-  border-width: 3px;
+  border: 3px #3419e8 solid;
   border-top: none;
   border-right: none;
   border-bottom: none;

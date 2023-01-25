@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Saira:wght@200;300;400;500;600;700;800;900&display=swap");
+@import "../../assets/scss/patter.scss";
 
 nav {
   ul{
@@ -8,15 +9,11 @@ nav {
     li{
       font-size: 14px;
       &::before{
-        content: '';
+        @include befores;
         width: 7px;
         height: 7px;
-        background-color: #1a0cc5;
-        position: absolute;
-        margin-top: 8px;
         margin-left: -18px;
-        rotate: 45deg;
-        box-shadow: 0px 0px 14px 1px #3419e8;   
+        margin-top: 8px;
       }
 
     }

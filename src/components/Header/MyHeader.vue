@@ -35,7 +35,7 @@
 </template>
 
 <script>
-import api from "../../api/user";
+import api from "../../api/users/user";
 
 export default {
   name: "MyHeader",
@@ -48,7 +48,6 @@ export default {
 
   mounted() {
     api.list().then((response) => {
-      console.log(response.data);
       this.infos = response.data;
     });
   },

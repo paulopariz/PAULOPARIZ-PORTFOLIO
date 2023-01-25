@@ -10,6 +10,8 @@
       <AboutMe />
 
       <MyTechs />
+
+      <MyProjects />
     </div>
   </div>
 </template>
@@ -18,12 +20,13 @@
 import AboutMe from "./components/About/AboutMe.vue";
 import MyHeader from "./components/Header/MyHeader.vue";
 import NavBar from "./components/NavBar/NavBar.vue";
+import MyProjects from "./components/Projects/MyProjects.vue";
 import MySociais from "./components/Sociais/MySociais.vue";
 import MyTechs from "./components/Techs/MyTechs.vue";
 
 export default {
   name: "App",
-  components: { NavBar, MyHeader, MySociais, AboutMe, MyTechs },
+  components: { NavBar, MyHeader, MySociais, AboutMe, MyTechs, MyProjects },
 };
 </script>
 

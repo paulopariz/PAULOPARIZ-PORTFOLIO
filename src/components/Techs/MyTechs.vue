@@ -9,25 +9,26 @@
 
     <section class="text-gray-600 body-font">
       <div class="container px-5 py-24 mx-auto flex flex-wrap">
+        <!--TECHS FRONT-->
         <div
           v-show="openFront"
           v-for="obj in techsFront"
           :key="obj"
-          class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto"
+          class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto gap-5"
         >
           <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
             <div class="line h-full pointer-events-none"></div>
           </div>
           <div
-            class="flex-shrink-0 w-8 h-8 -ml-1 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 font-sfera circle"
+            class="flex-shrink-0 w-8 h-8 -ml-1 mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 font-sfera circle"
           >
-            {{ obj.position }}
+            <span>{{ obj.position }}</span>
           </div>
           <div
             class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row"
           >
             <div
-              class="tech flex-shrink-0 w-28 h-28 rounded-full inline-flex items-center justify-center"
+              class="tech flex-shrink-0 w-28 h-28 inline-flex items-center justify-center"
             >
               <img :src="obj.icon" class="w-12" alt="" />
             </div>
@@ -42,25 +43,26 @@
           </div>
         </div>
 
+        <!--TECHS BACK-->
         <div
           v-show="openBack"
           v-for="obj in techsBack"
           :key="obj"
-          class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto"
+          class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto gap-5"
         >
           <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
             <div class="line h-full pointer-events-none"></div>
           </div>
           <div
-            class="flex-shrink-0 w-8 h-8 -ml-1 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 font-sfera circle"
+            class="flex-shrink-0 w-8 h-8 -ml-1 mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 font-sfera circle"
           >
-            {{ obj.position }}
+            <span>{{ obj.position }}</span>
           </div>
           <div
             class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row"
           >
             <div
-              class="tech flex-shrink-0 w-28 h-28 rounded-full inline-flex items-center justify-center"
+              class="tech flex-shrink-0 w-28 h-28 inline-flex items-center justify-center"
             >
               <img :src="obj.icon" class="w-12" alt="" />
             </div>
