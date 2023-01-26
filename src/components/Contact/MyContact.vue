@@ -45,7 +45,7 @@
           >
         </div>
         <div class="relative z-0 w-full mb-16 group">
-          <textarea
+          <input
             rows="3"
             type="text"
             name="message"
@@ -72,6 +72,16 @@
 <script>
 export default {
   name: "MyContact",
+
+  data() {
+    return {};
+  },
+
+  methods: {
+    submit() {
+      window.location.reload(true);
+    },
+  },
 };
 </script>
 
