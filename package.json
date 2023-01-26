@@ -12,6 +12,7 @@
     "axios": "^1.2.3",
     "core-js": "^3.8.3",
     "daisyui": "^2.49.0",
+    "flowbite": "^1.6.3",
     "vue": "^3.2.13"
   },
   "devDependencies": {

@@ -2,9 +2,15 @@
 module.exports = {
   content: [
     "./public/index.html",
-    "./src/**/*.{html,js,vue}"],
+    "./src/**/*.{html,js,vue}",
+    "./node_modules/flowbite/**/*.js"
+  ],
   theme: {
     extend: {
+      colors: {
+        'focusBorder': '#3419e8'
+      },
+
       fontFamily: {
         chopsic: ['Chopsic'],
         sfera: ['Sfera'],
@@ -12,6 +18,6 @@ module.exports = {
     },
   },
   plugins: [  
-    require('daisyui')
+    require('daisyui', 'flowbite/plugin')
   ],
 }

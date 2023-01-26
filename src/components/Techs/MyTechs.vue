@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-48 mb-20">
+  <div class="mt-60 mb-20">
     <h1 class="font-sfera text-5xl ml-11">TECNOLOGIAS</h1>
 
     <div class="mt-16 flex justify-center items-center gap-24">
@@ -33,7 +33,7 @@
               <img :src="obj.icon" class="w-12" alt="" />
             </div>
             <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-              <h2 class="font-medium title-font text-gray-300 mb-1 text-xl">
+              <h2 class="font-medium font-sfera text-gray-300 mb-1 text-xl">
                 {{ obj.tech }}
               </h2>
               <p class="leading-relaxed text-gray-600">
@@ -67,7 +67,7 @@
               <img :src="obj.icon" class="w-12" alt="" />
             </div>
             <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-              <h2 class="font-medium title-font text-gray-300 mb-1 text-xl">
+              <h2 class="font-medium font-sfera text-gray-300 mb-1 text-xl">
                 {{ obj.tech }}
               </h2>
               <p class="leading-relaxed text-gray-600">
