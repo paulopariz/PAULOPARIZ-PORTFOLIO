@@ -1,19 +1,38 @@
 <template>
-  <div>
+  <div class="mb-20">
     <h1 class="font-sfera text-5xl ml-11">Projetos</h1>
 
     <section class="grid grid-cols-3 gap-y-20 mt-16">
       <div v-for="obj in projects" :key="obj">
-        <div class="w-5/6 h-80 p-8 flex justify-between flex-col project">
+        <div class="w-5/6 h-80 p-8 flex justify-between flex-col project m-auto">
           <h2 class="font-sfera text-lg">{{ obj.name }}</h2>
           <p class="text-gray-600">{{ obj.desc }}</p>
-          <div class="flex items-center justify-center gap-6">
-            <a target="_blank" :href="obj.linkDeploy">DEPLOY</a>
-            <a target="_blank" :href="obj.linkGithub">GITHUB</a>
+          <div class="flex items-center justify-center gap-16">
+            <a
+              class="tooltip tooltip-primary"
+              data-tip="Ver repositório"
+              target="_blank"
+              :href="obj.linkDeploy"
+              ><img src="../../assets/img/icongithub.svg"
+            /></a>
+
+            <a
+              class="tooltip tooltip-primary"
+              data-tip="Ver projeto"
+              target="_blank"
+              :href="obj.linkGithub"
+              ><img src="../../assets/img/iconDeploy.svg"
+            /></a>
           </div>
         </div>
       </div>
     </section>
+
+    <div class="ViweAll">
+      <a target="_blank" href="https://github.com/paulopariz?tab=repositories"
+        >Ver todos projetos</a
+      >
+    </div>
   </div>
 </template>
 
