@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;500;600;700&display=swap");
+@import "../../assets/scss/patter.scss";
+
+footer{
+    font-family: 'Saira', sans-serif;
+    border-style: solid;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    border-width: 2px;
+    border-image: linear-gradient(273deg, #080808 5%, #4525d2 50%, #080808 95%) 1;
+
+    .eclipse {
+        @include eclipse;
+        width: 230px;
+        height: 100px;
+        margin-top: 0;
+
+      }
+}

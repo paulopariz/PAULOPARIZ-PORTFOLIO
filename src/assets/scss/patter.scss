@@ -35,3 +35,16 @@
         border: 2px #4525d2 solid;
     }
 }
+
+
+@mixin eclipse{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: rgb(0, 0, 152);
+    background: linear-gradient(180deg, rgba(0, 0, 152, 1) 16%, rgba(53, 25, 231, 1) 86%);
+    margin-top: 250px;
+    filter: blur(165px);
+    z-index: 0;
+    margin-left: 150px;
+}

@@ -46,7 +46,6 @@
         </div>
         <div class="relative z-0 w-full mb-16 group">
           <input
-            rows="3"
             type="text"
             name="message"
             id="floating_password"
@@ -79,7 +78,9 @@ export default {
 
   methods: {
     submit() {
-      window.location.reload(true);
+      setTimeout(() => {
+        window.location.reload(true);
+      }, 1000);
     },
   },
 };

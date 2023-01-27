@@ -15,12 +15,15 @@
 
       <MyContact />
     </div>
+
+    <MyFooter />
   </div>
 </template>
 
 <script>
 import AboutMe from "./components/About/AboutMe.vue";
 import MyContact from "./components/Contact/MyContact.vue";
+import MyFooter from "./components/Footer/MyFooter.vue";
 import MyHeader from "./components/Header/MyHeader.vue";
 import NavBar from "./components/NavBar/NavBar.vue";
 import MyProjects from "./components/Projects/MyProjects.vue";
@@ -29,7 +32,16 @@ import MyTechs from "./components/Techs/MyTechs.vue";
 
 export default {
   name: "App",
-  components: { NavBar, MyHeader, MySociais, AboutMe, MyTechs, MyProjects, MyContact },
+  components: {
+    NavBar,
+    MyHeader,
+    MySociais,
+    AboutMe,
+    MyTechs,
+    MyProjects,
+    MyContact,
+    MyFooter,
+  },
 };
 </script>
 

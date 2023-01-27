@@ -6,7 +6,7 @@ nav {
   ul{
     // background-color: rgba(0, 0, 0, 0.908);
     clip-path: polygon(5% 0,100% 0,100% 100%,5% 100%,0 50%);
-    li{
+    a{
       font-size: 14px;
       &::before{
         @include befores;
