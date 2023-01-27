@@ -10,10 +10,26 @@
 
       <div>
         <ul class="flex items-center gap-8">
-          <a href="">Instagram</a>
-          <a href="">Linkedin</a>
-          <a href="">E-mail</a>
-          <a href="">Whatsapp</a>
+          <a
+            class="relative before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-focusBorder before:transition hover:before:scale-100"
+            href=""
+            >Instagram</a
+          >
+          <a
+            class="relative before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-focusBorder before:transition hover:before:scale-100"
+            href=""
+            >Linkedin</a
+          >
+          <a
+            class="relative before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-focusBorder before:transition hover:before:scale-100"
+            href=""
+            >E-mail</a
+          >
+          <a
+            class="relative before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-focusBorder before:transition hover:before:scale-100"
+            href=""
+            >Whatsapp</a
+          >
         </ul>
       </div>
     </footer>

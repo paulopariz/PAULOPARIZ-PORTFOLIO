@@ -8,13 +8,7 @@ nav {
     clip-path: polygon(5% 0,100% 0,100% 100%,5% 100%,0 50%);
     a{
       font-size: 14px;
-      &::before{
-        @include befores;
-        width: 7px;
-        height: 7px;
-        margin-left: -18px;
-        margin-top: 8px;
-      }
+      
 
     }
   }

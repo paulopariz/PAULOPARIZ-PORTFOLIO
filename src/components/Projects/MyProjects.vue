@@ -1,6 +1,6 @@
 <template>
   <div class="mt-48 mb-20">
-    <h1 class="font-sfera text-5xl ml-11">Projetos</h1>
+    <h1 class="font-sfera text-5xl ml-11">PROJETOS</h1>
 
     <section class="grid grid-cols-3 gap-y-20 mt-16">
       <div v-for="obj in projects" :key="obj">

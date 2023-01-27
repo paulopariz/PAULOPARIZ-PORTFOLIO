@@ -9,7 +9,7 @@
     <div class="container m-auto">
       <AboutMe />
 
-      <MyTechs />
+      <MySkills />
 
       <MyProjects />
 
@@ -28,7 +28,7 @@ import MyHeader from "./components/Header/MyHeader.vue";
 import NavBar from "./components/NavBar/NavBar.vue";
 import MyProjects from "./components/Projects/MyProjects.vue";
 import MySociais from "./components/Sociais/MySociais.vue";
-import MyTechs from "./components/Techs/MyTechs.vue";
+import MySkills from "./components/Techs/MySkills.vue";
 
 export default {
   name: "App",
@@ -37,10 +37,10 @@ export default {
     MyHeader,
     MySociais,
     AboutMe,
-    MyTechs,
     MyProjects,
     MyContact,
     MyFooter,
+    MySkills,
   },
 };
 </script>

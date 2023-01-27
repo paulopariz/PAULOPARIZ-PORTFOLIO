@@ -1,6 +1,6 @@
 <template>
   <div class="mt-48 mb-20">
-    <h1 class="font-sfera text-5xl ml-11">Contato</h1>
+    <h1 class="font-sfera text-5xl ml-11">CONTATO</h1>
 
     <div class="mt-16 m-auto">
       <form
