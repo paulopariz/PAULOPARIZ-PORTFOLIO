@@ -1,10 +1,10 @@
 <template>
   <div>
-    <ul class="flex items-center justify-center gap-36 mt-28">
+    <ul class="flex items-center justify-center gap-36 mt-28 max-xl:gap-24 max-lg:gap-16">
       <li v-for="obj in sociais" :key="obj">
-        <a href="" class="flex items-center gap-6">
+        <a href="" class="flex items-center gap-6 max-lg:gap-2">
           <span
-            class="font-sfera relative before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-focusBorder before:transition hover:before:scale-100"
+            class="font-sfera relative before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-focusBorder before:transition hover:before:scale-100 max-lg:text-xs"
             >{{ obj.rede }}</span
           >
           <img class="invert rotate-45 w-9" src="../../assets/img/arrow.png" alt="" />

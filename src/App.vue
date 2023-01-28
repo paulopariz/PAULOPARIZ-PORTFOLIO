@@ -4,7 +4,7 @@
 
     <MyHeader />
 
-    <MySociais class="hidden" />
+    <MySociais />
 
     <div class="container m-auto">
       <AboutMe class="hidden" />

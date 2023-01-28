@@ -1,5 +1,5 @@
 <template>
-  <nav class="flex justify-between py-8 px-32 max-xl:px-20 max-sm:px-6">
+  <nav class="flex justify-between py-8 px-32 max-xl:px-20 max-lg:px-14 max-sm:px-6">
     <div><p class="hidden">P</p></div>
     <ul class="flex items-center gap-20 font-sfera max-xl:gap-14 max-lg:gap-7">
       <a
@@ -10,10 +10,10 @@
         >{{ obj.name }}</a
       >
 
-      <div class="md:hidden">
+      <div class="md:hidden z-40 absolute">
         <label class="swap swap-rotate">
           <!-- this hidden checkbox controls the state -->
-          <input type="checkbox" />
+          <input @click="openMenu" type="checkbox" />
           <!-- hamburger icon -->
           <svg
             class="swap-off fill-current"
@@ -42,6 +42,13 @@
       </div>
     </ul>
   </nav>
+  <div v-show="menu" class="menu w-full -mt-16 h-full absolute z-30">
+    <div class="m-auto flex h-96 flex-col justify-between">
+      <a v-for="obj in nav" :key="obj" class="font-sfera text-5xl" href="">
+        {{ obj.name }}
+      </a>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -50,6 +57,8 @@ export default {
 
   data() {
     return {
+      menu: false,
+
       nav: [
         {
           name: "SOBRE",
@@ -65,6 +74,12 @@ export default {
         },
       ],
     };
+  },
+
+  methods: {
+    openMenu() {
+      this.menu = !this.menu;
+    },
   },
 };
 </script>
@@ -92,5 +107,8 @@ nav {
       }
     }
   }
+}
+.menu {
+  background-color: #080808;
 }
 </style>
