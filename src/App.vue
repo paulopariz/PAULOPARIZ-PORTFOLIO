@@ -13,7 +13,7 @@
 
       <MyProjects />
 
-      <MyContact class="hidden" />
+      <MyContact />
     </div>
 
     <MyFooter class="hidden" />

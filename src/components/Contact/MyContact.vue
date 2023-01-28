@@ -1,12 +1,16 @@
 <template>
-  <div class="mt-48 mb-20">
-    <h1 class="font-sfera text-5xl ml-11">CONTATO</h1>
+  <div class="mt-48 mb-20 px-6">
+    <h1
+      class="font-sfera text-5xl ml-11 max-md:text-4xl max-sm:text-3xl max-xl:ml-10 max-sm:ml-8"
+    >
+      CONTATO
+    </h1>
 
     <div class="mt-16 m-auto">
       <form
         action="https://api.staticforms.xyz/submit"
         method="POST"
-        class="w-2/4 m-auto"
+        class="w-2/4 m-auto max-lg:w-full"
         target="_blank"
       >
         <input
