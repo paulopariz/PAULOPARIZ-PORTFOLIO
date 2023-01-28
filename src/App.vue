@@ -16,7 +16,7 @@
       <MyContact />
     </div>
 
-    <MyFooter class="hidden" />
+    <MyFooter />
   </div>
 </template>
 
@@ -28,7 +28,7 @@ import MyHeader from "./components/Header/MyHeader.vue";
 import NavBar from "./components/NavBar/NavBar.vue";
 import MyProjects from "./components/Projects/MyProjects.vue";
 import MySociais from "./components/Sociais/MySociais.vue";
-import MySkills from "./components/Techs/MySkills.vue";
+import MySkills from "./components/Skills/MySkills.vue";
 
 export default {
   name: "App",

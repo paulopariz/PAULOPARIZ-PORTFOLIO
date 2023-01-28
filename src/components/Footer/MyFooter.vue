@@ -1,15 +1,21 @@
 <template>
   <div>
-    <footer class="h-40 mt-48 flex justify-between items-center px-32">
-      <!-- <div class="eclipse"></div> -->
+    <footer
+      class="h-40 mt-48 flex justify-between items-center px-32 max-md:flex-col max-md:py-4 max-sm:h-20"
+    >
+      <div class="eclipse"></div>
 
-      <!-- <div class="flex gap-8 items-center justify-center absolute">
+      <div
+        class="flex gap-8 items-center justify-center absolute max-xl:flex-col max-xl:gap-3 max-md:gap-1"
+      >
         <h1>Paulo Pariz © {{ moment(new Date()).format("YYYY") }}</h1>
         <h2 class="text-gray-600">Todos os direitos reservados</h2>
-      </div> -->
+      </div>
 
-      <!-- <div>
-        <ul class="flex items-center gap-8">
+      <div>
+        <ul
+          class="flex items-center gap-8 max-lg:grid max-lg:grid-cols-2 max-md:flex max-md:gap-10 max-sm:hidden"
+        >
           <a
             v-for="obj in socias"
             :key="obj"
@@ -18,7 +24,7 @@
             >{{ obj.name }}</a
           >
         </ul>
-      </div> -->
+      </div>
     </footer>
   </div>
 </template>
@@ -60,12 +66,12 @@ export default {
 
 footer {
   font-family: "Saira", sans-serif;
-  // border-style: solid;
-  // border-right: none;
-  // border-left: none;
-  // border-bottom: none;
-  // border-width: 2px;
-  // border-image: linear-gradient(273deg, #080808 5%, #4525d2 50%, #080808 95%) 1;
+  border-style: solid;
+  border-right: none;
+  border-left: none;
+  border-bottom: none;
+  border-width: 2px;
+  border-image: linear-gradient(273deg, #080808 5%, #4525d2 50%, #080808 95%) 1;
 
   .eclipse {
     @include eclipse;
