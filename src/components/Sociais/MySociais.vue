@@ -1,6 +1,8 @@
 <template>
   <div>
-    <ul class="flex items-center justify-center gap-36 mt-28 max-xl:gap-24 max-lg:gap-16">
+    <ul
+      class="flex items-center justify-center gap-36 mt-28 max-xl:gap-24 max-lg:gap-16 max-md:grid max-md:grid-cols-2 max-md:place-items-center max-sm:grid-cols-1 max-sm:place-items-start max-sm:gap-8"
+    >
       <li v-for="obj in sociais" :key="obj">
         <a href="" class="flex items-center gap-6 max-lg:gap-2">
           <span
