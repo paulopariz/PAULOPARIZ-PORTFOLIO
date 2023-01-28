@@ -1,20 +1,24 @@
 <template>
-  <div class="mt-60 mb-20">
-    <h1 class="font-sfera text-5xl ml-11">HABILIDADES</h1>
+  <div class="mt-60 mb-20 px-6">
+    <h1
+      class="font-sfera text-5xl ml-11 max-md:text-4xl max-sm:text-3xl max-xl:ml-10 max-sm:ml-8"
+    >
+      HABILIDADES
+    </h1>
 
-    <div class="mt-16 flex justify-center items-center gap-24">
+    <div class="mt-16 flex justify-center items-center gap-24 max-sm:gap-8">
       <button @click="clickOpenFront">Front-end</button>
       <button @click="clickOpenBack">Back-end</button>
     </div>
 
     <section class="text-gray-600 body-font">
-      <div class="container px-5 py-24 mx-auto flex flex-wrap">
+      <div class="container py-24 mx-auto flex flex-wrap">
         <!--TECHS FRONT-->
         <div
           v-show="openFront"
           v-for="obj in techsFront"
           :key="obj"
-          class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto gap-5"
+          class="flex relative pt-10 pb-20 max-sm:pb-12 sm:items-center w-9/12 max-md:w-full max-md:text-sm mx-auto gap-5 max-xl:mx-0 max-xl:w-full"
         >
           <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
             <div class="line h-full pointer-events-none"></div>
@@ -25,7 +29,7 @@
             <span>{{ obj.position }}</span>
           </div>
           <div
-            class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row"
+            class="flex-grow md:pl-8 max-sm:pl-2 pl-6 flex sm:items-center items-start flex-col sm:flex-row"
           >
             <div
               class="tech flex-shrink-0 w-28 h-28 inline-flex items-center justify-center"
@@ -33,10 +37,12 @@
               <img :src="obj.icon" class="w-12" alt="" />
             </div>
             <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-              <h2 class="font-medium font-sfera text-gray-300 mb-1 text-xl">
+              <h2
+                class="font-medium font-sfera text-gray-300 mb-1 text-xl max-sm:text-base"
+              >
                 {{ obj.tech }}
               </h2>
-              <p class="leading-relaxed text-gray-600">
+              <p class="leading-relaxed text-gray-600 max-sm:text-xs">
                 {{ obj.desc }}
               </p>
             </div>
@@ -48,7 +54,7 @@
           v-show="openBack"
           v-for="obj in techsBack"
           :key="obj"
-          class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto gap-5"
+          class="flex relative pt-10 pb-20 max-sm:pb-12 sm:items-center md:w-2/3 mx-auto gap-5"
         >
           <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
             <div class="line h-full pointer-events-none"></div>
@@ -59,7 +65,7 @@
             <span>{{ obj.position }}</span>
           </div>
           <div
-            class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row"
+            class="flex-grow md:pl-8 max-sm:pl-2 pl-6 flex sm:items-center items-start flex-col sm:flex-row"
           >
             <div
               class="tech flex-shrink-0 w-28 h-28 inline-flex items-center justify-center"
@@ -67,10 +73,12 @@
               <img :src="obj.icon" class="w-12" alt="" />
             </div>
             <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-              <h2 class="font-medium font-sfera text-gray-300 mb-1 text-xl">
+              <h2
+                class="font-medium font-sfera text-gray-300 mb-1 text-xl max-sm:text-base"
+              >
                 {{ obj.tech }}
               </h2>
-              <p class="leading-relaxed text-gray-600">
+              <p class="leading-relaxed text-gray-600 max-sm:text-xs">
                 {{ obj.desc }}
               </p>
             </div>

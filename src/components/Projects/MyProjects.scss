@@ -3,13 +3,8 @@
 
 
 h1 {
-    letter-spacing: 1.3px;
-    display: flex;
-    align-items: center;
+    @include titles;
 
-    &::before {
-        @include befores;
-    }
 }
 
 section {
@@ -31,7 +26,7 @@ section {
             border-image: linear-gradient(205deg, #080808 5%, #4525d2 50%, #080808 95%) 1;
         }
 
-        .techs{
+        .techs {
             color: #4525d2;
             font-size: 10px;
             letter-spacing: 0.5px;
@@ -41,7 +36,7 @@ section {
             letter-spacing: 1.3px;
         }
 
-    
+
     }
 }
 
@@ -56,7 +51,7 @@ section {
         width: 50%;
         letter-spacing: 2.2px;
 
-        &:hover{
+        &:hover {
             opacity: 0.9;
         }
     }

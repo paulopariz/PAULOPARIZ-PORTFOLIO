@@ -2,58 +2,58 @@
 @import "../../assets/scss/patter.scss";
 
 h1 {
-  letter-spacing: 1.3px;
-  display: flex;
-  align-items: center;
 
-  &::before {
-    @include befores;
-  }
+  @include titles;
+
 }
 
 
-section{
+section {
   border: 3px #3419e8 solid;
   border-top: none;
   border-right: none;
   border-bottom: none;
-  padding: 0 0 0 40px ;
-  h2{
+  padding: 0 0 0 40px;
+
+  h2 {
     color: #3419e8;
     font-size: 35px;
     font-family: sfera;
-    text-shadow: 0px 0px 7px #3c1fdee3;  
+    text-shadow: 0px 0px 7px #3c1fdee3;
   }
-  p{
+
+  p {
     font-family: 'Saira', sans-serif;
     font-size: 21px;
     margin-top: 13px;
     letter-spacing: 1px;
-    
+
   }
 
-  @media(max-width: 1026px){
-    p{
+  @media(max-width: 1026px) {
+    p {
       font-size: 19px;
     }
   }
 
-  @media(max-width: 770px){
-    h2{
+  @media(max-width: 770px) {
+    h2 {
       font-size: 29px;
     }
-    p{
+
+    p {
       font-size: 16px;
     }
   }
 
-  @media(max-width: 642px){
+  @media(max-width: 642px) {
     padding: 0 0 0 12px;
 
-    h2{
+    h2 {
       font-size: 21px;
     }
-    p{
+
+    p {
       font-size: 13px;
       letter-spacing: 0;
     }

@@ -1,6 +1,8 @@
 <template>
   <div class="mt-48 mb-20 px-6">
-    <h1 class="font-sfera text-5xl ml-11 max-md:text-4xl max-sm:text-3xl max-sm:ml-9">
+    <h1
+      class="font-sfera text-5xl ml-11 max-md:text-4xl max-sm:text-3xl max-xl:ml-10 max-sm:ml-8"
+    >
       SOBRE
     </h1>
 

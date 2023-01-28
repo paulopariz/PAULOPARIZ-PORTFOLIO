@@ -3,13 +3,8 @@
 
 
 h1 {
-    letter-spacing: 1.3px;
-    display: flex;
-    align-items: center;
+    @include titles;
 
-    &::before {
-        @include befores;
-    }
 }
 
 form {

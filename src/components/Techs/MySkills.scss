@@ -2,48 +2,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Saira:wght@200;300;400;500;600;700;800;900&display=swap");
 
 h1 {
-    letter-spacing: 1.3px;
-    display: flex;
-    align-items: center;
-
-    &::before {
-        @include befores
-    }
+    @include titles
 }
 
 button {
     @include btn
 }
 
-section{
+section {
     .line {
         width: 3px;
         background: #3419e8;
     }
 
-    .circle{
-        font-size:11px;
+    .circle {
+        font-size: 11px;
         letter-spacing: 1.3px;
-        background-color: #3419e8 ;
+        background-color: #3419e8;
         rotate: 45deg;
         box-shadow: 0px 0px 15px 5px #4525d259;
 
-        span{
+        span {
             rotate: -45deg;
         }
     }
 
-    .tech{
+    .tech {
         border-style: solid;
         border-width: 2px;
         background-color: transparent;
         border-image: linear-gradient(150deg, #080808 5%, #4525d2 50%, #080808 95%) 1;
         background: radial-gradient(ellipse at center, rgba(7, 7, 7, 0) 0%, rgba(7, 7, 7, 0) 27%, rgba(7, 7, 7, 1) 88%, rgba(8, 8, 8, 1) 100%),
-        url("../../assets/img/bgheader.svg");        
+            url("../../assets/img/bgheader.svg");
         background-size: cover;
     }
 
-    p{
+    p {
         font-family: 'Saira', sans-serif;
+        @media(max-width: 642px){
+            font-size: 13px;
+        }
     }
 }

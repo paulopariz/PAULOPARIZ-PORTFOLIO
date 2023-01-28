@@ -1,5 +1,13 @@
-@mixin befores{
-    content: "";
+@mixin titles {
+
+    letter-spacing: 1.3px;
+    display: flex;
+    align-items: center;
+
+
+    &::before {
+
+        content: "";
         width: 14px;
         height: 14px;
         background-color: #1a0cc5;
@@ -9,17 +17,20 @@
         margin-left: -40px;
         margin-top: 10px;
 
-        @media(max-width: 642px){
+        @media(max-width: 642px) {
             width: 10px;
             height: 10px;
             margin-top: 8px;
             margin-left: -35px;
+
         }
+
+    }
 }
 
 
 /*BUTTONS*/
-@mixin btn{
+@mixin btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,20 +42,27 @@
     border-width: 2px;
     border-image: linear-gradient(52deg, #080808 5%, #4525d2 50%, #080808 95%) 1;
     transition: ease 0.3s;
-    
+
     &:hover {
         box-shadow: 0px 0px 14px 0px #3519e83c;
         border-image: linear-gradient(150deg, #080808 5%, #4525d2 50%, #080808 95%) 1;
     }
-    &:focus{
+
+    &:focus {
         background-color: #4525d2;
         border-image: none;
         border: 2px #4525d2 solid;
     }
+
+
+    @media(max-width: 642px){
+        font-size: 10px;
+        padding: 12px 34px;
+    }
 }
 
 
-@mixin eclipse{
+@mixin eclipse {
     width: 200px;
     height: 200px;
     border-radius: 50%;

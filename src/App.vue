@@ -9,7 +9,7 @@
     <div class="container m-auto">
       <AboutMe />
 
-      <MySkills class="hidden" />
+      <MySkills />
 
       <MyProjects class="hidden" />
 
