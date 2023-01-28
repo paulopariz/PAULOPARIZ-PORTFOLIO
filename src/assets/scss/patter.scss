@@ -8,6 +8,13 @@
         box-shadow: 0px 0px 14px 1px #3419e8;
         margin-left: -40px;
         margin-top: 10px;
+
+        @media(max-width: 642px){
+            width: 10px;
+            height: 10px;
+            margin-top: 8px;
+            margin-left: -35px;
+        }
 }
 
 

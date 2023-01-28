@@ -32,4 +32,31 @@ section{
     
   }
 
+  @media(max-width: 1026px){
+    p{
+      font-size: 19px;
+    }
+  }
+
+  @media(max-width: 770px){
+    h2{
+      font-size: 29px;
+    }
+    p{
+      font-size: 16px;
+    }
+  }
+
+  @media(max-width: 642px){
+    padding: 0 0 0 12px;
+
+    h2{
+      font-size: 21px;
+    }
+    p{
+      font-size: 13px;
+      letter-spacing: 0;
+    }
+  }
+
 }

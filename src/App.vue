@@ -7,7 +7,7 @@
     <MySociais />
 
     <div class="container m-auto">
-      <AboutMe class="hidden" />
+      <AboutMe />
 
       <MySkills class="hidden" />
 
