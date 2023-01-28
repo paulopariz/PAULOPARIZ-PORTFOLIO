@@ -1,16 +1,26 @@
 <template>
-  <div class="mt-48 mb-20">
-    <h1 class="font-sfera text-5xl ml-11">PROJETOS</h1>
+  <div class="mt-48 mb-20 px-6">
+    <h1
+      class="font-sfera text-5xl ml-11 max-md:text-4xl max-sm:text-3xl max-xl:ml-10 max-sm:ml-8"
+    >
+      PROJETOS
+    </h1>
 
-    <section class="grid grid-cols-3 gap-y-20 mt-16">
+    <section
+      class="grid grid-cols-3 gap-16 mt-16 max-xl:grid-cols-2 max-md:grid-cols-1 max-xl:gap-10"
+    >
       <div v-for="obj in projects" :key="obj">
-        <div class="w-5/6 h-80 p-8 flex justify-between flex-col project m-auto">
+        <div
+          class="w-full h-80 p-8 flex justify-between flex-col project m-auto max-md:justify-around"
+        >
           <div>
             <h2 class="font-sfera text-lg">{{ obj.name }}</h2>
             <span class="techs">{{ obj.techs }}</span>
           </div>
 
-          <p class="text-gray-600">{{ obj.desc }}</p>
+          <p class="text-gray-600 max-xl:text-base max-md:text-base max-sm:text-sm">
+            {{ obj.desc }}
+          </p>
           <div class="flex items-center gap-12">
             <a
               class="tooltip tooltip-primary"

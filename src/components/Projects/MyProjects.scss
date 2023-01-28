@@ -38,6 +38,14 @@ section {
 
 
     }
+
+    @media(max-width: 1282px){
+        .project{
+            h2{
+                letter-spacing: 0.5px;
+            }
+        }
+    }
 }
 
 .ViweAll {
@@ -53,6 +61,12 @@ section {
 
         &:hover {
             opacity: 0.9;
+        }
+    }
+
+    @media(max-width: 1026px){
+        a{
+            width: 100%;
         }
     }
 }

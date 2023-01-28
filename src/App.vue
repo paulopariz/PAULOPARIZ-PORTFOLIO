@@ -11,7 +11,7 @@
 
       <MySkills />
 
-      <MyProjects class="hidden" />
+      <MyProjects />
 
       <MyContact class="hidden" />
     </div>
