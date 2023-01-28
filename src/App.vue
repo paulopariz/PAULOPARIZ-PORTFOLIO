@@ -4,19 +4,19 @@
 
     <MyHeader />
 
-    <MySociais />
+    <MySociais class="hidden" />
 
     <div class="container m-auto">
-      <AboutMe />
+      <AboutMe class="hidden" />
 
-      <MySkills />
+      <MySkills class="hidden" />
 
-      <MyProjects />
+      <MyProjects class="hidden" />
 
-      <MyContact />
+      <MyContact class="hidden" />
     </div>
 
-    <MyFooter />
+    <MyFooter class="hidden" />
   </div>
 </template>
 

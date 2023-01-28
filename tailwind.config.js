@@ -6,7 +6,20 @@ module.exports = {
     "./node_modules/flowbite/**/*.js"
   ],
   theme: {
+   
+
     extend: {
+      
+        screens: {
+          mn: '441px',
+          sm: '642px',
+          md: '770px' ,
+          lg: '1026px' ,
+          xl: '1282px' ,
+          '2xl': '1537px' ,
+          
+         
+      },
       colors: {
         'focusBorder': '#3419e8'
       },

@@ -51,6 +51,11 @@ ul {
   li {
     a {
       letter-spacing: 1.4px;
+      transition: ease 0.3s;
+
+      &:hover {
+        opacity: 0.9;
+      }
       img {
         opacity: 0.7;
       }

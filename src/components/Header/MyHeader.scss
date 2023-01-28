@@ -2,13 +2,12 @@
 @import "../../assets/scss/patter.scss";
 
 .bg {
-  background: radial-gradient(ellipse at center, rgba(8, 8, 8, 0) 0%, rgba(8, 8, 8, 0) 17%, rgba(8, 8, 8, 0) 18%, rgba(8, 8, 8, 1) 70%, rgba(8, 8, 8, 1) 100%),
+  background: radial-gradient(ellipse at center, rgba(8,8,8,0) 0%, rgba(8,8,8,0) 16%, rgba(8,8,8,1) 72%, rgba(8,8,8,1) 100%),
     url("../../assets/img/bgheader.svg");
   margin-top: -100px;
 
   h1 {
     text-shadow: 5px 6px 18px rgba(244, 244, 244, 0.203);
-    z-index: 1;
   }
 
   .github {
@@ -29,6 +28,8 @@
         font-size: 13px;
       }
     }
+
+    
   }
 
   a {
@@ -49,10 +50,21 @@
       width: 21px;
       margin-top: 3px;
     }
-    &:hover{
+
+    &:hover {
       opacity: 0.9;
       clip-path: polygon(-2rem 0, calc(100% + -2rem) 0, calc(100% + 2rem) 100%, 2rem 100%);
 
+    }
+
+    @media(max-width: 1282px) {
+      width: 44%;
+    }
+    @media(max-width: 1026px){
+      width: 60%;
+    }
+    @media(max-width: 770px){
+      width: 100%;
     }
 
   }
@@ -60,6 +72,42 @@
   .eclipse {
     @include eclipse;
   }
+
+  @media(max-width: 770px){
+    .github{
+      align-items: flex-start;
+      div{
+        flex-direction: row;
+        gap: 30px;
+  
+        h2{
+          font-size: 32px;
+        }
+        span{
+          font-size: 12px;
+        }
+      }
+    }
+
+    .eclipse{
+      margin-top: 85px;
+    }
+  }
+  @media(max-width: 642px){
+    a{
+      padding: 17px 0;
+      font-size: 12px;
+      margin-top: 70px;
+    }
+    .eclipse{
+      width: 150px;
+      height: 150px;
+      margin-top: -160px;
+    }
+  }
+
+ 
+
 }
 
 
