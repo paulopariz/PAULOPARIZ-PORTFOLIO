@@ -10,7 +10,7 @@
         >{{ obj.name }}</a
       >
 
-      <div class="hidden z-40 absolute">
+      <div class="md:hidden z-40 absolute">
         <label class="swap swap-rotate">
           <!-- this hidden checkbox controls the state -->
           <input @click="openMenu" type="checkbox" />

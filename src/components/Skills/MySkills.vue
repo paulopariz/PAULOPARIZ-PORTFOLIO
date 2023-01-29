@@ -54,7 +54,7 @@
           v-show="openBack"
           v-for="obj in techsBack"
           :key="obj"
-          class="flex relative pt-10 pb-20 max-sm:pb-12 sm:items-center md:w-2/3 mx-auto gap-5"
+          class="flex relative pt-10 pb-20 max-sm:pb-12 sm:items-center w-9/12 max-md:w-full max-md:text-sm mx-auto gap-5 max-xl:mx-0 max-xl:w-full"
         >
           <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
             <div class="line h-full pointer-events-none"></div>
@@ -185,12 +185,16 @@ export default {
 
   methods: {
     clickOpenFront() {
-      this.openFront = true;
-      this.openBack = false;
+      setTimeout(() => {
+        this.openFront = true;
+        this.openBack = false;
+      }, 500);
     },
     clickOpenBack() {
-      this.openBack = true;
-      this.openFront = false;
+      setTimeout(() => {
+        this.openBack = true;
+        this.openFront = false;
+      }, 500);
     },
   },
 };

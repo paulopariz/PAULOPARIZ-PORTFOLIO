@@ -20,7 +20,7 @@
             v-for="obj in socias"
             :key="obj"
             class="relative before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-focusBorder before:transition hover:before:scale-100"
-            href=""
+            :href="obj.link"
             >{{ obj.name }}</a
           >
         </ul>
@@ -40,15 +40,20 @@ export default {
       socias: [
         {
           name: "Instagram",
+          link: "https://www.instagram.com/parizpaulo_/",
         },
         {
           name: "Linkedin",
+          link: "https://www.linkedin.com/in/paulopariz/",
         },
         {
           name: "E-mail",
+          link:
+            "https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=paulopariz01@gmail.com",
         },
         {
           name: "Whatsapp",
+          link: "https://api.whatsapp.com/send?phone=5544999575376",
         },
       ],
     };
