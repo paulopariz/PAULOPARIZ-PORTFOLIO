@@ -1,7 +1,7 @@
 <template>
-  <nav class="flex justify-between py-8 px-32 max-xl:px-20 max-lg:px-14 max-sm:px-6">
+  <nav class="container m-auto flex items-center justify-between py-9 px-6">
     <div><p class="hidden">P</p></div>
-    <ul class="flex items-center gap-20 font-sfera max-xl:gap-14 max-lg:gap-7">
+    <ul class="font-sfera flex items-center gap-14 max-lg:gap-9">
       <a
         v-for="obj in nav"
         :key="obj"
@@ -11,33 +11,10 @@
       >
 
       <div class="md:hidden z-40 absolute">
-        <label class="swap swap-rotate">
-          <!-- this hidden checkbox controls the state -->
+        <label class="swap">
           <input @click="openMenu" type="checkbox" />
-          <!-- hamburger icon -->
-          <svg
-            class="swap-off fill-current"
-            xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
-            viewBox="0 0 512 512"
-          >
-            <path
-              d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"
-            />
-          </svg>
-          <!-- close icon -->
-          <svg
-            class="swap-on fill-current"
-            xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
-            viewBox="0 0 512 512"
-          >
-            <polygon
-              points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"
-            />
-          </svg>
+          <div class="swap-on -ml-16 max-sm:-ml-20">FECHAR</div>
+          <div class="swap-off -ml-14 max-sm:-ml-16">MENU</div>
         </label>
       </div>
     </ul>
