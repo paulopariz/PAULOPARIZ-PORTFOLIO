@@ -6,7 +6,7 @@
         v-for="obj in nav"
         :key="obj"
         class="relative max-md:hidden before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-focusBorder before:transition hover:before:scale-100"
-        href=""
+        :href="obj.href"
         >{{ obj.name }}</a
       >
 
@@ -19,13 +19,14 @@
       </div>
     </ul>
   </nav>
-  <div v-show="menu" class="menu w-full fixed z-30">
+  <div name="slide-fade" v-show="menu" class="menu w-full fixed z-30">
     <div class="links flex h-96 flex-col justify-between x">
       <a
         v-for="obj in nav"
         :key="obj"
         class="font-sfera text-5xl max-sm:text-3xl"
-        href="https://graphichunters.com/"
+        :href="obj.href"
+        @click="closeMenu"
       >
         {{ obj.name }}
       </a>
@@ -44,15 +45,19 @@ export default {
       nav: [
         {
           name: "SOBRE",
+          href: "#about",
         },
         {
           name: "HABILIDADES",
+          href: "#skills",
         },
         {
           name: "PROJETOS",
+          href: "#projects",
         },
         {
           name: "CONTATO",
+          href: "#contact",
         },
       ],
     };
@@ -61,6 +66,10 @@ export default {
   methods: {
     openMenu() {
       this.menu = !this.menu;
+    },
+
+    closeMenu() {
+      this.menu = false;
     },
   },
 };
@@ -145,5 +154,19 @@ nav {
   @media (min-width: 770px) {
     display: none;
   }
+}
+
+.slide-fade-enter-active {
+  transition: all 0.3s ease-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateX(20px);
+  opacity: 0;
 }
 </style>

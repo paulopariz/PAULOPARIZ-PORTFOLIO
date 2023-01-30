@@ -54,4 +54,24 @@ body {
   list-style: none;
   color: #fff;
 }
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #1e1e1e #080808;
+  scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #080808;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #1e1e1e;
+  border-radius: 20px;
+  border: 3px solid #080808;
+}
 </style>

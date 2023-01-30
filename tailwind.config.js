@@ -21,7 +21,7 @@ module.exports = {
          
       },
       colors: {
-        'focusBorder': '#3419e8'
+        'focusBorder': '#4525d2'
       },
 
       fontFamily: {
