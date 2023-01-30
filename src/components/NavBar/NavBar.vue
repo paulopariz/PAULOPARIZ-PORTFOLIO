@@ -11,11 +11,16 @@
       >
 
       <div class="menuMobile md:hidden z-40 fixed">
-        <label class="swap">
-          <input @click="openMenu" type="checkbox" />
-          <div class="btnClose swap-on -ml-16 max-sm:-ml-20">FECHAR</div>
-          <div class="btnMenu swap-off -ml-14 max-sm:-ml-16">MENU</div>
-        </label>
+        <div v-show="x">
+          <button @click="openMenu" class="btnMenu swap-off -ml-14 max-sm:-ml-16">
+            MENU
+          </button>
+        </div>
+        <div v-show="y">
+          <button @click="closeMenu" class="btnClose swap-off -ml-14 max-sm:-ml-16">
+            FECHAR
+          </button>
+        </div>
       </div>
     </ul>
   </nav>
@@ -26,7 +31,7 @@
         :key="obj"
         class="font-sfera text-5xl max-sm:text-3xl"
         :href="obj.href"
-        @click="closeMenu"
+        @click="closeLinks"
       >
         {{ obj.name }}
       </a>
@@ -41,6 +46,9 @@ export default {
   data() {
     return {
       menu: false,
+
+      x: true,
+      y: false,
 
       nav: [
         {
@@ -65,11 +73,21 @@ export default {
 
   methods: {
     openMenu() {
-      this.menu = !this.menu;
+      this.menu = true;
+      this.y = true;
+      this.x = false;
     },
 
     closeMenu() {
       this.menu = false;
+      this.y = false;
+      this.x = true;
+    },
+
+    closeLinks() {
+      this.menu = false;
+      this.y = false;
+      this.x = true;
     },
   },
 };
@@ -140,7 +158,7 @@ nav {
   height: 999px;
   .links {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
