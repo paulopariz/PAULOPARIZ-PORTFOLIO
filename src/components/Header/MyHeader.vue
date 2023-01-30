@@ -54,13 +54,13 @@
         </button>
       </div>
     </header>
-    <div class="mouse_scroll">
+    <a href="#about" class="mouse_scroll">
       <div>
         <span class="m_scroll_arrows one"></span>
         <span class="m_scroll_arrows two"></span>
         <span class="m_scroll_arrows three"></span>
       </div>
-    </div>
+    </a>
   </div>
 </template>
 

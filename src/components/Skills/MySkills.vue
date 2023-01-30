@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-60 mb-20 px-6" id="skills">
+  <div class="mt-60 mb-20 px-6 max-sm:mt-36" id="skills">
     <h1
       class="font-sfera text-5xl ml-11 max-md:text-4xl max-sm:text-3xl max-xl:ml-10 max-sm:ml-8"
     >

@@ -1,5 +1,9 @@
 <template>
-  <div>
+  <div v-show="loading">
+    <MyLoading />
+  </div>
+
+  <div v-show="content" class="animate__animated animate__fadeIn">
     <NavBar />
 
     <MyHeader />
@@ -21,6 +25,7 @@
 </template>
 
 <script>
+import AOS from "aos";
 import AboutMe from "./components/About/AboutMe.vue";
 import MyContact from "./components/Contact/MyContact.vue";
 import MyFooter from "./components/Footer/MyFooter.vue";
@@ -29,6 +34,7 @@ import NavBar from "./components/NavBar/NavBar.vue";
 import MyProjects from "./components/Projects/MyProjects.vue";
 import MySociais from "./components/Sociais/MySociais.vue";
 import MySkills from "./components/Skills/MySkills.vue";
+import MyLoading from "./components/Loading/MyLoading.vue";
 
 export default {
   name: "App",
@@ -41,6 +47,26 @@ export default {
     MyContact,
     MyFooter,
     MySkills,
+    MyLoading,
+  },
+
+  data() {
+    return {
+      loading: true,
+      content: false,
+    };
+  },
+
+  mounted() {
+    AOS.init();
+  },
+
+  created: function () {
+    setTimeout(() => {
+      this.loading = false;
+
+      this.content = true;
+    }, 5500);
   },
 };
 </script>
@@ -73,5 +99,19 @@ body {
   background-color: #1e1e1e;
   border-radius: 20px;
   border: 3px solid #080808;
+}
+
+.slide-fade-enter-active {
+  transition: all 0.3s ease-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateX(0px);
+  opacity: 0;
 }
 </style>
