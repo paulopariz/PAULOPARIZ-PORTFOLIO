@@ -19,16 +19,29 @@
 export default {
   name: "AboutMe",
 
+  setup() {
+    const initialDate = new Date("06/01/2022");
+    const currentDate = new Date();
+    const milliseconds = currentDate - initialDate;
+    const diffSegundos = milliseconds / 1000;
+    const minutes = diffSegundos / 60;
+    const hours = minutes / 60;
+    const days = hours / 24;
+    const months = Math.round(days / 30);
+
+    return { months };
+  },
+
   data() {
     return {
       about: [
         {
           position: "01",
-          desc: "Me chamo Paulo, tenho 18 anos.",
+          desc: "Me chamo Paulo, tenho 18 anos",
         },
         {
           position: "02",
-          desc: "Estudo programação há mais de 7 meses.",
+          desc: "Estudo programação há mais de " + this.months + " meses.",
         },
         {
           position: "03",

@@ -1,7 +1,7 @@
 <template>
   <div>
     <footer
-      class="h-40 mt-48 flex justify-between items-center px-32 max-md:flex-col max-md:py-4 max-sm:h-20"
+      class="h-40 mt-56 flex justify-between items-center px-32 max-md:flex-col max-md:py-4 max-sm:h-20"
     >
       <div class="eclipse"></div>
 
@@ -9,7 +9,7 @@
         class="flex gap-8 items-center justify-center absolute max-xl:flex-col max-xl:gap-3 max-md:gap-1"
       >
         <h1>Paulo Pariz © {{ moment(new Date()).format("YYYY") }}</h1>
-        <h2 class="text-gray-600">Todos os direitos reservados</h2>
+        <h2 class="text-gray-600">Todos os direitos reservados {{ years }}</h2>
       </div>
 
       <div>
@@ -21,6 +21,7 @@
             :key="obj"
             class="relative before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-focusBorder before:transition hover:before:scale-100"
             :href="obj.link"
+            target="_blank"
             >{{ obj.name }}</a
           >
         </ul>

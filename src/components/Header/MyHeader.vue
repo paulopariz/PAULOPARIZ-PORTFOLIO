@@ -54,7 +54,7 @@
         </button>
       </div>
     </header>
-    <a href="#about" class="mouse_scroll">
+    <a href="#sobre" class="mouse_scroll">
       <div>
         <span class="m_scroll_arrows one"></span>
         <span class="m_scroll_arrows two"></span>

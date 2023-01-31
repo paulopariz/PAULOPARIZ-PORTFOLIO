@@ -79,6 +79,10 @@ body {
   box-sizing: border-box;
   list-style: none;
   color: #fff;
+  ::selection {
+    background: #4525d2;
+    color: #fff;
+  }
 }
 
 * {
