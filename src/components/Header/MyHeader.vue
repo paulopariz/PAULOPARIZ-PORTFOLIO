@@ -3,7 +3,7 @@
     <header class="mt-80 max-md:mt-44 max-sm:mt-64 max-mn:mt-40 container m-auto px-6">
       <div class="absolute z-10">
         <h1
-          class="pr-6 text-7xl mt-3 font-sfera max-md:text-6xl max-md:mt-20 max-sm:text-4xl max-mn:text-3xl"
+          class="pr-6 text-7xl mt-3 font-sfera max-md:text-6xl max-md:mt-20 max-sm:text-4xl max-mn:text-3xl animate__animated animate__fadeIn animate__delay-1s"
         >
           {{ infos.name }}
         </h1>
@@ -12,7 +12,7 @@
 
       <div>
         <div
-          class="github flex items-center justify-between font-sfera max-xl:gap-16 max-md:flex-col max-md:gap-5 max-md:mt-7 max-mn:mt-2"
+          class="github flex items-center justify-between font-sfera max-xl:gap-16 max-md:flex-col max-md:gap-5 max-md:mt-7 max-mn:mt-2 animate__animated animate__fadeIn animate__delay-1s"
         >
           <div>
             <h2>{{ infos.followers }}</h2>
@@ -29,9 +29,14 @@
         </div>
         <button
           @click="redirectGithub"
-          class="font-sfera flex items-center justify-center"
+          class="font-sfera flex items-center justify-center animate__animated animate__fadeIn animate__delay-1s"
         >
-          {{ follow }} <img v-show="x" :src="iconGithub" alt="" />
+          {{ follow }}
+          <img
+            v-show="x"
+            :src="iconGithub"
+            class="animate__animated animate__flipInX animate__delay-1s"
+          />
           <div role="status" v-show="spinner">
             <svg
               aria-hidden="true"
@@ -54,7 +59,7 @@
         </button>
       </div>
     </header>
-    <a href="#sobre" class="mouse_scroll">
+    <a href="#sobre" class="mouse_scroll animate__animated animate__fadeInUp">
       <div>
         <span class="m_scroll_arrows one"></span>
         <span class="m_scroll_arrows two"></span>

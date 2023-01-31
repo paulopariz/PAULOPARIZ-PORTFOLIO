@@ -8,10 +8,14 @@
 
   h1 {
     text-shadow: 5px 6px 18px rgba(244, 244, 244, 0.203);
+    --animate-delay: 0.5s;
+
   }
 
   .github {
     width: 37.5%;
+    --animate-delay: 0.6s;
+
 
     div {
       display: flex;
@@ -45,6 +49,8 @@
     letter-spacing: 3px;
     transition: ease .3s;
     clip-path: polygon(2rem 0, calc(100% + 2rem) 0, calc(100% - 2rem) 100%, -2rem 100%);
+    --animate-delay: 0.7s;
+
 
     img {
       width: 21px;
