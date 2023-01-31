@@ -1,9 +1,9 @@
 <template>
   <div class="bg">
-    <header class="mt-80 container m-auto px-6">
+    <header class="mt-80 max-md:mt-44 max-sm:mt-64 max-mn:mt-40 container m-auto px-6">
       <div class="absolute z-10">
         <h1
-          class="pr-6 text-7xl mt-3 font-sfera max-md:text-6xl max-md:mt-20 max-sm:text-4xl"
+          class="pr-6 text-7xl mt-3 font-sfera max-md:text-6xl max-md:mt-20 max-sm:text-4xl max-mn:text-3xl"
         >
           {{ infos.name }}
         </h1>
@@ -12,7 +12,7 @@
 
       <div>
         <div
-          class="github flex items-center justify-between font-sfera max-xl:gap-16 max-md:flex-col max-md:gap-5 max-md:mt-7"
+          class="github flex items-center justify-between font-sfera max-xl:gap-16 max-md:flex-col max-md:gap-5 max-md:mt-7 max-mn:mt-2"
         >
           <div>
             <h2>{{ infos.followers }}</h2>

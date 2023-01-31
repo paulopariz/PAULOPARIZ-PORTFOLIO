@@ -1,12 +1,14 @@
 <template>
-  <div class="mt-60 mb-20 px-6 max-sm:mt-36" id="skills">
+  <div class="mt-60 mb-20 px-6 max-sm:mt-36" id="habilidades">
     <h1
-      class="font-sfera text-5xl ml-11 max-md:text-4xl max-sm:text-3xl max-xl:ml-10 max-sm:ml-8"
+      class="font-sfera text-5xl ml-11 max-md:text-4xl max-sm:text-3xl max-xl:ml-10 max-sm:ml-8 max-mn:text-2xl"
     >
       HABILIDADES
     </h1>
 
-    <div class="mt-16 flex justify-center items-center gap-24 max-sm:gap-8">
+    <div
+      class="mt-16 flex justify-center items-center gap-24 max-sm:gap-8 max-mn:gap-2 max-mn:flex-col"
+    >
       <button @click="clickOpenFront">Front-end</button>
       <button @click="clickOpenBack">Back-end</button>
     </div>

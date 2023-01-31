@@ -29,11 +29,13 @@
     </ul>
   </nav>
   <div name="slide-fade" v-show="menu" class="menu w-full fixed z-30">
-    <div class="links flex h-96 flex-col justify-between x">
+    <div
+      class="links flex h-96 flex-col justify-between max-sm:justify-center max-sm:gap-10"
+    >
       <a
         v-for="obj in nav"
         :key="obj"
-        class="font-sfera text-5xl max-sm:text-3xl"
+        class="font-sfera text-5xl max-sm:text-3xl max-mm:text-2xl"
         :href="obj.href"
         @click="closeLinks"
       >
@@ -57,19 +59,19 @@ export default {
       nav: [
         {
           name: "SOBRE",
-          href: "#about",
+          href: "#sobre",
         },
         {
           name: "HABILIDADES",
-          href: "#skills",
+          href: "#habilidades",
         },
         {
           name: "PROJETOS",
-          href: "#projects",
+          href: "#projetos",
         },
         {
           name: "CONTATO",
-          href: "#contact",
+          href: "#contato",
         },
       ],
     };
@@ -161,7 +163,7 @@ nav {
 }
 .menu {
   background-color: #080808;
-  margin-top: -72px;
+  margin-top: -200px;
   height: 999px;
   .links {
     position: absolute;
@@ -170,14 +172,20 @@ nav {
     transform: translate(-50%, -50%);
   }
 
+  @media (min-width: 770px) {
+    display: none;
+  }
+
   @media (max-width: 642px) {
     .links {
-      top: 40%;
+      top: 43%;
     }
   }
 
-  @media (min-width: 770px) {
-    display: none;
+  @media (max-width: 376px) {
+    .links {
+      top: 50%;
+    }
   }
 }
 

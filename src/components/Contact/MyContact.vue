@@ -1,7 +1,7 @@
 <template>
-  <div class="mt-48 mb-20 px-6 max-sm:mt-36" id="contact">
+  <div class="mt-48 mb-20 px-6 max-sm:mt-36" id="contato">
     <h1
-      class="font-sfera text-5xl ml-11 max-md:text-4xl max-sm:text-3xl max-xl:ml-10 max-sm:ml-8"
+      class="font-sfera text-5xl ml-11 max-md:text-4xl max-sm:text-3xl max-xl:ml-10 max-sm:ml-8 max-mn:text-2xl"
     >
       CONTATO
     </h1>
