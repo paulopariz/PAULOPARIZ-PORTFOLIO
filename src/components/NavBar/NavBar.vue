@@ -8,7 +8,7 @@
         <a
           v-for="obj in nav"
           :key="obj"
-          class="relative max-md:hidden before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-focusBorder before:transition hover:before:scale-100"
+          class="relative max-md:hidden before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-focusBorder before:transition hover:before:scale-100 animate__animated animate__fadeInDown animate__delay-1s"
           :href="obj.href"
           >{{ obj.name }}</a
         >
@@ -16,12 +16,18 @@
 
       <div class="menuMobile md:hidden">
         <div v-show="x" mode="out-in">
-          <button @click="openMenu" class="btnMenu swap-off -ml-14 max-sm:-ml-16">
+          <button
+            @click="openMenu"
+            class="btnMenu swap-off -ml-14 max-sm:-ml-16 animate__animated animate__fadeIn"
+          >
             MENU
           </button>
         </div>
         <div v-show="y">
-          <button @click="closeMenu" class="btnClose swap-off -ml-14 max-sm:-ml-24">
+          <button
+            @click="closeMenu"
+            class="btnClose swap-off -ml-14 max-sm:-ml-24 animate__animated animate__fadeIn"
+          >
             FECHAR
           </button>
         </div>
@@ -30,12 +36,12 @@
   </nav>
   <div name="slide-fade" v-show="menu" class="menu w-full fixed z-30">
     <div
-      class="links flex h-96 flex-col justify-between max-sm:justify-center max-sm:gap-10"
+      class="links flex h-96 flex-col justify-between max-sm:justify-center max-sm:gap-10 animate__animated animate__fadeIn"
     >
       <a
         v-for="obj in nav"
         :key="obj"
-        class="font-sfera text-5xl max-sm:text-3xl max-mm:text-2xl"
+        class="font-sfera text-5xl max-sm:text-3xl max-mm:text-2xl animate__animated animate__fadeInUp animate__delay-1s"
         :href="obj.href"
         @click="closeLinks"
       >

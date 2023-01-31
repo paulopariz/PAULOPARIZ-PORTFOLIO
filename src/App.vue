@@ -52,8 +52,8 @@ export default {
 
   data() {
     return {
-      loading: true,
-      content: false,
+      loading: false,
+      content: true,
     };
   },
 
