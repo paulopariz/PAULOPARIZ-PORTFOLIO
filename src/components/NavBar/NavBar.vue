@@ -1,16 +1,20 @@
 <template>
-  <nav class="container m-auto flex items-center justify-between py-9 px-6">
-    <div><p class="hidden">P</p></div>
-    <ul class="font-sfera flex items-center gap-14 max-lg:gap-9">
-      <a
-        v-for="obj in nav"
-        :key="obj"
-        class="relative max-md:hidden before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-focusBorder before:transition hover:before:scale-100"
-        :href="obj.href"
-        >{{ obj.name }}</a
-      >
+  <nav class="fixed z-50 -top-2 bg-red-900 w-full py-9 px-6">
+    <ul
+      class="font-sfera container m-auto justify-between flex items-center gap-14 max-lg:gap-9"
+    >
+      <div><p class="hidden text-transparent">P</p></div>
+      <div class="flex items-center gap-14 max-lg:gap-9">
+        <a
+          v-for="obj in nav"
+          :key="obj"
+          class="relative max-md:hidden before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-focusBorder before:transition hover:before:scale-100"
+          :href="obj.href"
+          >{{ obj.name }}</a
+        >
+      </div>
 
-      <div class="menuMobile md:hidden z-40 fixed">
+      <div class="menuMobile md:hidden">
         <div v-show="x">
           <button @click="openMenu" class="btnMenu swap-off -ml-14 max-sm:-ml-16">
             MENU
@@ -98,6 +102,9 @@ export default {
 @import "../../assets/scss/patter.scss";
 
 nav {
+  background: linear-gradient(180deg, #080808 0%, rgba(3, 9, 23, 0) 100%),
+    linear-gradient(180deg, #080808 0%, rgba(3, 9, 23, 0) 100%),
+    linear-gradient(180deg, #080808 0%, rgba(3, 9, 23, 0) 100%);
   ul {
     a {
       font-size: 14px;
