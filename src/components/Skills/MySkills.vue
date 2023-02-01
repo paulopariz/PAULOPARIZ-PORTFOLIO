@@ -2,12 +2,16 @@
   <div class="mt-60 mb-20 px-6 max-sm:mt-36" id="habilidades">
     <h1
       class="font-sfera text-5xl ml-11 max-md:text-4xl max-sm:text-3xl max-xl:ml-10 max-sm:ml-8 max-mn:text-2xl"
+      data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom"
     >
       HABILIDADES
     </h1>
 
     <div
       class="mt-16 flex justify-center items-center gap-24 max-sm:gap-8 max-mn:gap-2 max-mn:flex-col"
+      data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom"
     >
       <button @click="clickOpenFront" class="flex items-center gap-9">
         {{ nameBtnFront }}
@@ -62,7 +66,7 @@
           v-show="openFront"
           v-for="obj in techsFront"
           :key="obj"
-          class="flex relative pt-10 pb-20 max-sm:pb-12 sm:items-center w-9/12 max-md:w-full max-md:text-sm mx-auto gap-5 max-xl:mx-0 max-xl:w-full"
+          class="flex relative pt-10 pb-20 max-sm:pb-12 sm:items-center w-9/12 max-md:w-full max-md:text-sm mx-auto gap-5 max-xl:mx-0 max-xl:w-full animate__animated animate__fadeIn"
         >
           <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
             <div class="line h-full pointer-events-none"></div>
@@ -74,6 +78,7 @@
           </div>
           <div
             class="flex-grow md:pl-8 max-sm:pl-2 pl-6 flex sm:items-center items-start flex-col sm:flex-row"
+            data-aos="fade-up"
           >
             <div
               class="tech flex-shrink-0 w-28 h-28 inline-flex items-center justify-center"
@@ -98,7 +103,7 @@
           v-show="openBack"
           v-for="obj in techsBack"
           :key="obj"
-          class="flex relative pt-10 pb-20 max-sm:pb-12 sm:items-center w-9/12 max-md:w-full max-md:text-sm mx-auto gap-5 max-xl:mx-0 max-xl:w-full"
+          class="flex relative pt-10 pb-20 max-sm:pb-12 sm:items-center w-9/12 max-md:w-full max-md:text-sm mx-auto gap-5 max-xl:mx-0 max-xl:w-full animate__animated animate__fadeIn"
         >
           <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
             <div class="line h-full pointer-events-none"></div>

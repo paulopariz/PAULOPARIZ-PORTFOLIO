@@ -2,11 +2,18 @@
   <div class="mt-48 mb-20 px-6 max-sm:mt-36" id="contato">
     <h1
       class="font-sfera text-5xl ml-11 max-md:text-4xl max-sm:text-3xl max-xl:ml-10 max-sm:ml-8 max-mn:text-2xl"
+      data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom"
     >
       CONTATO
     </h1>
 
-    <div class="mt-16 m-auto">
+    <div
+      class="mt-16 m-auto"
+      data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom"
+      data-aos-duration="500"
+    >
       <form
         action="https://api.staticforms.xyz/submit"
         method="POST"

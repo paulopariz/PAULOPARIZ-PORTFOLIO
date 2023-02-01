@@ -2,6 +2,8 @@
   <div class="mt-48 mb-20 px-6 max-sm:mt-28" id="projetos">
     <h1
       class="font-sfera text-5xl ml-11 max-md:text-4xl max-sm:text-3xl max-xl:ml-10 max-sm:ml-8 max-mn:text-2xl"
+      data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom"
     >
       PROJETOS
     </h1>
@@ -9,7 +11,13 @@
     <section
       class="grid grid-cols-3 gap-16 mt-16 max-xl:grid-cols-2 max-md:grid-cols-1 max-xl:gap-10"
     >
-      <div v-for="obj in projects" :key="obj">
+      <div
+        v-for="obj in projects"
+        :key="obj"
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"
+        data-aos-duration="500"
+      >
         <div
           class="w-full h-80 p-8 flex justify-between flex-col project m-auto max-md:justify-around"
         >

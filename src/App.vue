@@ -3,7 +3,7 @@
     <MyLoading />
   </div>
 
-  <div v-show="content" class="animate__animated animate__fadeIn">
+  <div v-show="content" class="animate__animated animate__fadeIn animate__delay-5s">
     <NavBar />
 
     <MyHeader />
@@ -58,13 +58,17 @@ export default {
   },
 
   mounted() {
-    AOS.init();
+    AOS.init({
+      once: true,
+    });
   },
 
   created: function () {
+    this.loading = true;
+    document.body.style.overflow = "hidden";
     setTimeout(() => {
+      document.body.style.overflow = "auto";
       this.loading = false;
-
       this.content = true;
     }, 5500);
   },
