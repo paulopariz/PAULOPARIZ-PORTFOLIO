@@ -28,6 +28,8 @@
 </template>
 
 <script>
+// import moment from "moment";
+
 export default {
   name: "AboutMe",
 
@@ -41,8 +43,15 @@ export default {
     const days = hours / 24;
     const months = Math.round(days / 30);
 
+    const date = new Date();
+    const formatDate = date.toLocaleString();
+
+    console.log(formatDate);
+
     return { months };
   },
+
+  methods: {},
 
   data() {
     return {

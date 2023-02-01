@@ -41,7 +41,7 @@
       <a
         v-for="obj in nav"
         :key="obj"
-        class="font-sfera text-5xl max-sm:text-3xl max-mm:text-2xl animate__animated animate__fadeInUp animate__delay-1s"
+        class="font-sfera text-5xl max-sm:text-3xl max-mn:text-xl animate__animated animate__fadeInUp animate__delay-1s"
         :href="obj.href"
         @click="closeLinks"
       >
