@@ -9,14 +9,14 @@ h1 {
 
 
 section {
-  border: 3px #3419e8 solid;
+  border: 3px $secondary-color solid;
   border-top: none;
   border-right: none;
   border-bottom: none;
   padding: 0 0 0 40px;
 
   h2 {
-    color: #3419e8;
+    color: $secondary-color;
     font-size: 35px;
     font-family: sfera;
     text-shadow: 0px 0px 7px #3c1fdee3;

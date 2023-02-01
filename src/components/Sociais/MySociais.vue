@@ -53,13 +53,21 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../../assets/scss/patter.scss";
+
 ul {
   padding: 45px;
   border-style: solid;
   border-right: none;
   border-left: none;
   border-width: 2px;
-  border-image: linear-gradient(273deg, #080808 5%, #4525d2 50%, #080808 95%) 1;
+  border-image: linear-gradient(
+      273deg,
+      $background 5%,
+      $primary-color 50%,
+      $background 95%
+    )
+    1;
 
   li {
     a {

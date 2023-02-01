@@ -13,7 +13,7 @@ section {
         border-style: solid;
         border-width: 2px;
         background-color: transparent;
-        border-image: linear-gradient(150deg, #080808 5%, #4525d2 50%, #080808 95%) 1;
+        border-image: linear-gradient(150deg, $background 5%, $primary-color 50%, $background 95%) 1;
         background: radial-gradient(ellipse at center, rgba(8, 8, 8, 0) 0%, rgba(8, 8, 8, 0) 12%, rgba(8, 8, 8, 1) 64%, rgba(8, 8, 8, 1) 100%),
             url("../../assets/img/bgheader.svg");
         background-size: cover;
@@ -23,11 +23,11 @@ section {
         &:hover {
             background-size: cover;
             box-shadow: 0px 0px 14px 0px #3519e83c;
-            border-image: linear-gradient(205deg, #080808 5%, #4525d2 50%, #080808 95%) 1;
+            border-image: linear-gradient(205deg, $background 5%, $primary-color 50%, $background 95%) 1;
         }
 
         .techs {
-            color: #4525d2;
+            color: $primary-color;
             font-size: 10px;
             letter-spacing: 0.5px;
         }
@@ -55,7 +55,7 @@ section {
 
     button {
         @include btn;
-        background-color: #4525d2;
+        background-color: $primary-color;
         width: 50%;
         letter-spacing: 2.2px;
 

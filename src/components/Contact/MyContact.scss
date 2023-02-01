@@ -17,7 +17,7 @@ form {
 
         button {
             @include btn;
-            background-color: #4525d2;
+            background-color: $primary-color;
             width: 100%;
             letter-spacing: 2.2px;
 

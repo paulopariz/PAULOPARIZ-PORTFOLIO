@@ -2,9 +2,9 @@
 @import "../../assets/scss/patter.scss";
 
 nav {
-  background: linear-gradient(180deg, #080808 0%, rgba(3, 9, 23, 0) 100%),
-    linear-gradient(180deg, #080808 0%, rgba(3, 9, 23, 0) 100%),
-    linear-gradient(180deg, #080808 0%, rgba(3, 9, 23, 0) 100%);
+  background: linear-gradient(180deg, $background 0%, rgba(3, 9, 23, 0) 100%),
+    linear-gradient(180deg, $background 0%, rgba(3, 9, 23, 0) 100%),
+    linear-gradient(180deg, $background 0%, rgba(3, 9, 23, 0) 100%);
   ul {
     a {
       font-size: 14px;
@@ -24,6 +24,9 @@ nav {
       &:nth-child(4){
         --animate-delay: 1.2s;
       }
+      &:nth-child(5){
+        --animate-delay: 1.5s;
+      }
     }
 
     .menuMobile {
@@ -35,10 +38,10 @@ nav {
           content: "";
           width: 7px;
           height: 7px;
-          background-color: #1a0cc5;
+          background-color: $tertiary-color;
           position: absolute;
           rotate: 45deg;
-          box-shadow: 0px 0px 14px 1px #3419e8;
+          box-shadow: 0px 0px 14px 1px $secondary-color;
           margin-left: -20px;
           margin-top: 3px;
         }
@@ -72,7 +75,7 @@ nav {
   }
 }
 .menu {
-  background-color: #080808;
+  background-color: $background;
   margin-top: -200px;
   height: 999px;
   .links {
@@ -93,6 +96,9 @@ nav {
       }
       &:nth-child(4){
         --animate-delay: 1.2s;
+      }
+      &:nth-child(5){
+        --animate-delay: 1.5s;
       }
       
     }

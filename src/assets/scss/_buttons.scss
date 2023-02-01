@@ -1,0 +1,35 @@
+@mixin btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    font-family: sfera;
+    letter-spacing: 1px;
+    font-size: 14px;
+    padding: 12px 38px;
+    border-style: solid;
+    border-width: 2px;
+    border-image: linear-gradient(52deg, $background 5%, $primary-color 50%, $background 95%) 1;
+    transition: ease 0.3s;
+
+    &:hover {
+        box-shadow: 0px 0px 14px 0px #3519e83c;
+        border-image: linear-gradient(150deg, $background 5%, $primary-color 50%, $background 95%) 1;
+    }
+
+    &:focus {
+        background-color: $primary-color;
+        border-image: none;
+        border: 2px $primary-color solid;
+    }
+
+
+    @media(max-width: 642px){
+        font-size: 9.51px;
+        padding: 12px 34px;
+    }
+    @media(max-width: 376px){
+        width: 100%;
+        font-size: 8px;
+    }
+}

@@ -64,6 +64,10 @@ export default {
 
       nav: [
         {
+          name: "Início",
+          href: "#",
+        },
+        {
           name: "SOBRE",
           href: "#sobre",
         },

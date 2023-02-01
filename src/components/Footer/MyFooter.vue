@@ -77,7 +77,13 @@ footer {
   border-left: none;
   border-bottom: none;
   border-width: 2px;
-  border-image: linear-gradient(273deg, #080808 5%, #4525d2 50%, #080808 95%) 1;
+  border-image: linear-gradient(
+      273deg,
+      $background 5%,
+      $primary-color 50%,
+      $background 95%
+    )
+    1;
 
   .eclipse {
     @include eclipse;

@@ -12,13 +12,13 @@ button {
 section {
     .line {
         width: 3px;
-        background: #3419e8;
+        background: $secondary-color;
     }
 
     .circle {
         font-size: 11px;
         letter-spacing: 1.3px;
-        background-color: #3419e8;
+        background-color: $secondary-color;
         rotate: 45deg;
         box-shadow: 0px 0px 15px 5px #4525d259;
 
@@ -31,7 +31,7 @@ section {
         border-style: solid;
         border-width: 2px;
         background-color: transparent;
-        border-image: linear-gradient(150deg, #080808 5%, #4525d2 50%, #080808 95%) 1;
+        border-image: linear-gradient(150deg, $background 5%, $primary-color 50%, $background 95%) 1;
         background: radial-gradient(ellipse at center, rgba(7, 7, 7, 0) 0%, rgba(7, 7, 7, 0) 27%, rgba(7, 7, 7, 1) 88%, rgba(8, 8, 8, 1) 100%),
             url("../../assets/img/bgheader.svg");
         background-size: cover;

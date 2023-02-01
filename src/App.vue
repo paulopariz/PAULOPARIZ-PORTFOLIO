@@ -3,7 +3,10 @@
     <MyLoading />
   </div>
 
-  <div v-show="content" class="animate__animated animate__fadeIn animate__delay-5s">
+  <div
+    v-show="content"
+    class="animate__animated animate__fadeIn animate__delay-1s showContent"
+  >
     <NavBar />
 
     <MyHeader />
@@ -76,22 +79,24 @@ export default {
 </script>
 
 <style lang="scss">
+@import "./assets/scss/patter.scss";
+
 body {
-  background-color: #080808;
+  background-color: $background;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   list-style: none;
-  color: #fff;
+  color: $color-white;
   ::selection {
-    background: #4525d2;
-    color: #fff;
+    background: $primary-color;
+    color: $color-white;
   }
 }
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: #1e1e1e #080808;
+  scrollbar-color: #1e1e1e $background;
   scroll-behavior: smooth;
 }
 
@@ -100,13 +105,13 @@ body {
 }
 
 *::-webkit-scrollbar-track {
-  background: #080808;
+  background: $background;
 }
 
 *::-webkit-scrollbar-thumb {
   background-color: #1e1e1e;
   border-radius: 20px;
-  border: 3px solid #080808;
+  border: 3px solid $background;
 }
 
 .slide-fade-enter-active {
@@ -121,5 +126,9 @@ body {
 .slide-fade-leave-to {
   transform: translateX(0px);
   opacity: 0;
+}
+
+.showContent {
+  --animate-delay: 6.3s;
 }
 </style>
