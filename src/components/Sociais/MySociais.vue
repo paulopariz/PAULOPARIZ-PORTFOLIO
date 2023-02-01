@@ -1,7 +1,7 @@
 <template>
   <div>
     <ul
-      class="flex items-center justify-center gap-36 mt-28 max-xl:gap-24 max-lg:gap-16 max-md:grid max-md:grid-cols-2 max-md:place-items-center max-sm:grid-cols-1 max-sm:place-items-start max-sm:gap-8"
+      class="flex items-center justify-center gap-36 mt-28 max-xl:gap-24 max-lg:gap-16 max-md:grid max-md:grid-cols-2 max-md:place-items-center max-sm:grid-cols-1 max-sm:place-items-start max-sm:gap-8 max-sm:mt-40"
       data-aos="fade-up"
       data-aos-anchor-placement="center-bottom"
     >

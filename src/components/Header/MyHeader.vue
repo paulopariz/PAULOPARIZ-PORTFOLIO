@@ -1,6 +1,6 @@
 <template>
   <div class="bg">
-    <header class="mt-80 max-md:mt-44 max-sm:mt-64 max-mn:mt-40 container m-auto px-6">
+    <header class="mt-80 max-md:mt-44 max-sm:mt-64 max-mn:mt-56 container m-auto px-6">
       <div class="absolute z-10">
         <h1
           class="pr-6 text-7xl mt-3 font-sfera max-md:text-6xl max-md:mt-20 max-sm:text-4xl max-mn:text-3xl animate__animated animate__fadeIn animate__delay-1s"
