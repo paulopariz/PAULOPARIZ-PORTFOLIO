@@ -25,7 +25,7 @@
           name="accessKey"
           value="f6a0e930-21e6-4fdf-b0a5-cbe6d8c95fe1"
         />
-        <input type="hidden" name="redirectTo" value="http://localhost:8080/" />
+        <input type="hidden" name="redirectTo" value="https://paulopariz.vercel.app/" />
         <div class="relative z-0 mb-16 group">
           <input
             name="name"

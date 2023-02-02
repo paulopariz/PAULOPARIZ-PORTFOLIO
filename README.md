@@ -2,7 +2,7 @@
 
 <br>
 
-<p align="center">Meu portfólio exibe informaçoẽs sobre mim, minhas habilidades, alguns projetos em destaque e um formulário para contato. Desenvolvido com VueJS, Tailwind e SASS para os estilos, entre outras bibliotecas!</p>
+<p align="center">O <a href="https://paulopariz.vercel.app/">portfólio</a> exibe informações sobre mim, minhas habilidades, alguns projetos em destaque e um formulário para contato. Desenvolvido com VueJS, Tailwind e SASS para os estilos, entre outras bibliotecas!</p>
 
 <br>
 
@@ -10,6 +10,11 @@
 
 <br> 
 
+https://user-images.githubusercontent.com/111146928/216165956-76b7e272-5128-4875-bc9a-7e5d309d47da.mp4
+
+<br>
+
+https://user-images.githubusercontent.com/111146928/216166156-ae6ecb62-d0be-476c-8f96-d5b6517df875.mp4
 
 <br><br>
 
@@ -33,15 +38,15 @@
 |   <img src="https://skillicons.dev/icons?i=js">      |    `JAVASCRIPT`   |
 |   <img src="https://skillicons.dev/icons?i=sass">      |    `SASS`   |
 |   <img src="https://skillicons.dev/icons?i=tailwind">      |    `TAILWIND`   |
-|   <img src="">      |    `MOMENTJS`   |
-|   <img src="">      |    `AXIOS`   |
-|   <img src="">      |    `AOS - ANIMATE`   |
-|   <img src="">      |    `ANIMATE CSS`   |
+|   <img >      |    `MOMENTJS`   |
+|   <img >      |    `AXIOS`   |
+|   <img >      |    `AOS - ANIMATE`   |
+|   <img >      |    `ANIMATE CSS`   |
 
 <br><br>
 
 ## 📍 DEPLOY:
-- <a href="">CLIQUE AQUI PARA VER O PROJETO</a>
+- <a href="https://paulopariz.vercel.app/">CLIQUE AQUI PARA VER O PROJETO</a>
 
 <br>
 
