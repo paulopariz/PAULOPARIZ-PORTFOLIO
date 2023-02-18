@@ -21,7 +21,7 @@
         data-aos="fade-up"
       >
         <h2>{{ obj.position }}</h2>
-        <p class="text-gray-600">{{ obj.desc }}</p>
+        <p class="text-gray-500">{{ obj.desc }}</p>
       </div>
     </section>
   </div>

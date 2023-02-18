@@ -9,7 +9,7 @@
         class="flex gap-8 items-center justify-center absolute max-xl:flex-col max-xl:gap-3 max-md:gap-1"
       >
         <h1>Paulo Pariz © {{ moment(new Date()).format("YYYY") }}</h1>
-        <h2 class="text-gray-600">Todos os direitos reservados {{ years }}</h2>
+        <h2 class="text-gray-500">Todos os direitos reservados {{ years }}</h2>
       </div>
 
       <div>

@@ -26,7 +26,7 @@
             <span class="techs">{{ obj.techs }}</span>
           </div>
 
-          <p class="text-gray-600 max-xl:text-base max-md:text-base max-sm:text-sm">
+          <p class="text-gray-500 max-xl:text-base max-md:text-base max-sm:text-sm">
             {{ obj.desc }}
           </p>
           <div class="flex items-center gap-12">

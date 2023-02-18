@@ -91,7 +91,7 @@
               >
                 {{ obj.tech }}
               </h2>
-              <p class="leading-relaxed text-gray-600 max-sm:text-xs">
+              <p class="leading-relaxed text-gray-500 max-sm:text-xs">
                 {{ obj.desc }}
               </p>
             </div>
