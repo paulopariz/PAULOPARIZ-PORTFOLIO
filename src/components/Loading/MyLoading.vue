@@ -4,7 +4,7 @@
       class="absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 flex items-center"
     >
       <h1
-        class="animate__animated animate__fadeIn animate__delay-1s font-sfera text-3xl max-sm:text-xl max-mn:text-lg"
+        class="animate__animated animate__fadeIn  font-sfera text-3xl max-sm:text-xl max-mn:text-lg"
       >
         PAULO <span> PARIZ</span>
         <b class="text-focusBorder"> _</b>

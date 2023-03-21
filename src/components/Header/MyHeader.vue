@@ -35,6 +35,7 @@
           <img
             v-show="x"
             :src="iconGithub"
+            alt="GitHub"
             class="animate__animated animate__flipInX animate__delay-1s"
           />
           <div role="status" v-show="spinner">

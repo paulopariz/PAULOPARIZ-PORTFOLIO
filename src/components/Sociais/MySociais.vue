@@ -15,7 +15,7 @@
             class="font-sfera relative before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-focusBorder before:transition hover:before:scale-100 max-lg:text-xs"
             >{{ obj.rede }}</span
           >
-          <img class="invert rotate-45 w-9 max-sm:w-5" src="../../assets/img/arrow.png" />
+          <img class="invert rotate-45 w-9 max-sm:w-5" src="../../assets/img/arrow.png" alt="arrow" />
         </a>
       </li>
     </ul>

@@ -30,21 +30,28 @@
             {{ obj.desc }}
           </p>
           <div class="flex items-center gap-12">
+
             <a
               class="tooltip tooltip-primary"
               data-tip="Ver repositório"
               target="_blank"
               :href="obj.linkGithub"
-              ><img src="../../assets/img/icongithub.svg"
-            /></a>
+              >
+              <img src="../../assets/img/icongithub.svg" alt="GitHub"/>
+
+
+            </a>
 
             <a
               class="tooltip tooltip-primary"
               data-tip="Ver projeto"
               target="_blank"
               :href="obj.linkDeploy"
-              ><img src="../../assets/img/iconDeploy.svg"
-            /></a>
+              >
+              
+                <img src="../../assets/img/iconDeploy.svg" alt="Deploy"/>
+              
+              </a>
           </div>
         </div>
       </div>
