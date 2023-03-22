@@ -159,21 +159,21 @@ export default {
           icon: require("../../assets/img/iconHtml.svg"),
           tech: "HTML",
           desc:
-            "HTML é uma linguagem de marcação utilizada na construção de páginas na Web.",
+            "HTML é uma linguagem de marcação essencial para a construção de páginas na Web. Com ela, é possível estruturar e organizar o conteúdo de um site de forma clara e semântica, ",
         },
         {
           position: "02",
           icon: require("../../assets/img/iconCss.svg"),
           tech: "CSS",
           desc:
-            "Cascading Style Sheets é um mecanismo para adicionar estilos a uma página web, aplicado diretamente nas tags HTML.",
+            "CSS é uma linguagem de marcação utilizada para descrever a apresentação de documentos escritos em HTML, ou seja, a aparência visual de uma página da web. O CSS permite definir o layout, as cores, as fontes e outros aspectos visuais de um site de forma separada do conteúdo em si.",
         },
         {
           position: "03",
           icon: require("../../assets/img/iconJs.svg"),
           tech: "JavaScript",
           desc:
-            "JavaScript é uma linguagem de programação de alto nível criada, a princípio, para ser executada em navegadores e manipular comportamentos de páginas web.",
+            "JavaScript é uma linguagem de programação de alto nível originalmente criada para manipular comportamentos de páginas web e executada principalmente em navegadores.",
         },
         {
           position: "04",
@@ -187,7 +187,7 @@ export default {
           icon: require("../../assets/img/iconBootstrap.svg"),
           tech: "Bootstrap",
           desc:
-            "Bootstrap é um framework front-end que fornece estruturas de CSS para a criação de sites e aplicações responsivas de forma rápida e simples.",
+            "O Bootstrap é um framework front-end que oferece estruturas de CSS para desenvolvimento de sites e aplicações responsivas de forma rápida e descomplicada.",
         },
         {
           position: "06",
@@ -201,7 +201,7 @@ export default {
           icon: require("../../assets/img/iconSass.svg"),
           tech: "SASS",
           desc:
-            "O Sass(Syntactically awesome style sheets) é uma linguagem baseada no CSS, que depois de processada gera CSS.",
+            "O Sass (Syntactically Awesome Style Sheets) é uma linguagem que se baseia no CSS, e após ser processada, gera o código CSS correspondente.",
         },
         {
           position: "08",
