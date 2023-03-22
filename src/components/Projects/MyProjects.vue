@@ -30,16 +30,13 @@
             {{ obj.desc }}
           </p>
           <div class="flex items-center gap-12">
-
             <a
               class="tooltip tooltip-primary"
               data-tip="Ver repositório"
               target="_blank"
               :href="obj.linkGithub"
-              >
-              <img src="../../assets/img/icongithub.svg" alt="GitHub"/>
-
-
+            >
+              <img src="../../assets/img/icongithub.svg" alt="GitHub" />
             </a>
 
             <a
@@ -47,11 +44,9 @@
               data-tip="Ver projeto"
               target="_blank"
               :href="obj.linkDeploy"
-              >
-              
-                <img src="../../assets/img/iconDeploy.svg" alt="Deploy"/>
-              
-              </a>
+            >
+              <img src="../../assets/img/iconDeploy.svg" alt="Deploy" />
+            </a>
           </div>
         </div>
       </div>
@@ -97,7 +92,7 @@ export default {
         {
           name: "ZCARS",
           desc:
-            "Zcars é um projeto pessoal de venda de carros, feito especialmente com Laravel.",
+            "O projeto Zcars é uma iniciativa pessoal de vendas de automóveis, desenvolvido com a utilização da tecnologia Laravel.",
           linkDeploy: "https://github.com/paulopariz/ZCars",
           linkGithub: "https://github.com/paulopariz/ZCars",
           techs: "JS, LARAVEL, PHP, BOOTSTRAP",
@@ -105,7 +100,7 @@ export default {
         {
           name: "ToDo List",
           desc:
-            "ToDo List desenvolvida com VueJs e Json-Server como uma API 'fake'. Podendo adicionar uma tarefa, editar, marcar como concluída e deletar.",
+            "ToDo List desenvolvida com VueJs e Json-Server como uma API fake. Com esta ferramenta, é possível adicionar, editar, marcar como concluída e excluir tarefas com facilidade.",
           linkDeploy: "https://github.com/paulopariz/ToDoList",
           linkGithub: "https://github.com/paulopariz/ToDoList",
           techs: "VUE, VUEX, JS, TAILWIND",
@@ -113,7 +108,7 @@ export default {
         {
           name: "app-clima-tempo",
           desc:
-            "Aplicativo meteorológico que fornece o clima de várias de cidades do mundo. Usando a API OpenWeatherAPI.",
+            "Aplicativo meteorológico que permite verificar as condições climáticas de diversas cidades em todo o mundo. Ele utiliza a API OpenWeatherAPI para retornar as informaçoẽs como: temperatura, umidade, velocidade do vento.",
           linkDeploy: "https://app-clima-tempo-ten.vercel.app/",
           linkGithub: "https://github.com/paulopariz/app-clima-tempo",
           techs: "HTML, CSS, JS",
@@ -121,7 +116,7 @@ export default {
         {
           name: "redirect-links",
           desc:
-            "Sistema de cadastro de links, o usuário pode editar, atualizar e deletar os links. ",
+            "Este sistema permite que o usuário cadastre, edite, atualize e exclua links de forma fácil e eficiente.",
           linkDeploy: "https://github.com/paulopariz/redirect-links-frontend",
           linkGithub: "https://github.com/paulopariz/redirect-links-frontend",
           techs: "VUE, JS, PHP, LARAVEL, TAILWIND",
@@ -129,7 +124,7 @@ export default {
         {
           name: "Landing-Page-NFT",
           desc:
-            "Landing page desenvolvida com VueJS, a base de seus componentes, com layout 100% responsivo",
+            "Landing page desenvolvida com VueJS, a base de seus componentes, garantindo que o layout seja totalmente responsivo, adaptando-se perfeitamente a qualquer dispositivo.",
           linkDeploy: "https://landing-page-nft-alpha.vercel.app/",
           linkGithub: "https://github.com/paulopariz/Landing-Page-NFT",
           techs: "VUE, SASS, FIGMA",
@@ -137,7 +132,7 @@ export default {
         {
           name: "IMC",
           desc:
-            "Calcule o seu IMC, digite seu peso e sua altura e descubra o seu IMC. Tabela disponível para saber em que classificação que você se encaixa.",
+            "Para calcular o seu IMC, basta inserir sua altura e peso nos campos indicados. Em seguida, confira a tabela disponível para identificar a sua classificação de acordo com o resultado obtido.",
           linkDeploy: "https://imc-rosy.vercel.app/",
           linkGithub: "https://github.com/paulopariz/IMC",
           techs: "JS, VUE, BOOTSTRAP",
