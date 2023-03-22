@@ -58,11 +58,11 @@ export default {
       about: [
         {
           position: "01",
-          desc: "Me chamo Paulo, tenho 18 anos",
+          desc: "Me chamo Paulo, tenho 18 anos, sou Desenvolvedor Front-End",
         },
         {
           position: "02",
-          desc: "Estudo programação há mais de " + this.months + " meses.",
+          desc: "Começei a programar há mais de " + this.months + " meses.",
         },
         {
           position: "03",
@@ -71,7 +71,12 @@ export default {
         {
           position: "04",
           desc:
-            "Tenho mais experiência com front-end e sempre busco aprimorar o back-end.",
+            "Tenho mais experiência em front-end, mas estou constantemente buscando aprender e aprimorar minhas habilidades em Back-End.",
+        },
+        {
+          position: "05",
+          desc:
+            "Atualmente, estou estudando NuxtJS para expandir ainda mais minhas habilidades, e tenho interesse em aprender NodeJS",
         },
       ],
     };
