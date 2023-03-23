@@ -1,5 +1,5 @@
 <template>
-  <nav class="fixed z-50 -top-2 w-full py-9 px-6">
+  <nav class="fixed z-50 -top-2 w-full pt-9 pb-16 px-6">
     <ul
       class="font-sfera container m-auto justify-between flex items-center gap-14 max-lg:gap-9"
     >
@@ -34,7 +34,10 @@
       </div>
     </ul>
   </nav>
-  <div name="slide-fade" v-show="menu" class="menu w-full fixed z-30">
+  <div
+    v-show="menu"
+    class="menu w-full fixed z-30 animate__animated animate__slideInDown"
+  >
     <div
       class="links flex h-96 flex-col justify-between max-sm:justify-center max-sm:gap-10 animate__animated animate__fadeIn"
     >

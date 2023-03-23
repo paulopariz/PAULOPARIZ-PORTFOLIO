@@ -39,7 +39,7 @@
             class="animate__animated animate__flipInX animate__delay-1s"
           />
           <div v-show="spinner">
-            <spinnerBtn />
+            <spinnerBtn class="-mt-1" />
           </div>
         </button>
       </div>
