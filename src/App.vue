@@ -73,7 +73,7 @@ export default {
       document.body.style.overflow = "auto";
       this.loading = false;
       this.content = true;
-    }, 5500);
+    }, 5300);
   },
 };
 </script>

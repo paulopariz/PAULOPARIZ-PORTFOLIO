@@ -4,10 +4,13 @@
       class="absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 flex items-center"
     >
       <h1
-        class="animate__animated animate__fadeIn  font-sfera text-3xl max-sm:text-xl max-mn:text-lg"
+        class="animate__animated animate__fadeIn font-sfera text-3xl max-sm:text-xl max-mn:text-lg m-auto w-full text-center"
       >
-        PAULO <span> PARIZ</span>
-        <b class="text-focusBorder"> _</b>
+        PAULO <span>PARIZ</span>
+
+        <div class="w-11/12 h-[4.5px] m-auto mt-4 bg-[#0e0e0e] rounded-full">
+          <div class="h-[4.5px] w-0 rounded-full bg-black mt-4 loading"></div>
+        </div>
       </h1>
     </div>
   </div>
@@ -20,15 +23,30 @@ export default {
 </script>
 
 <style>
-@keyframes b {
+.animationLetra {
+  animation-delay: 1s;
+}
+
+.loading {
+  animation: loading 3s ease both;
+  animation-delay: 1s;
+}
+
+@keyframes loading {
   0% {
-    opacity: 1;
+    width: 0px;
   }
+
   50% {
-    opacity: 0.5;
+    width: 50%;
+  }
+  85% {
+    width: 85%;
   }
   100% {
-    opacity: 0;
+    background: #4525d2;
+
+    width: 100%;
   }
 }
 b {
