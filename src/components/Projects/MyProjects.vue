@@ -22,8 +22,8 @@
           class="w-full h-80 p-8 flex justify-between flex-col project m-auto max-md:justify-around"
         >
           <div>
-            <h2 class="font-sfera text-lg">{{ obj.name }}</h2>
-            <span class="techs">{{ obj.techs }}</span>
+            <h2 class="font-sfera text-lg uppercase">{{ obj.name }}</h2>
+            <span class="techs uppercase">{{ obj.techs }}</span>
           </div>
 
           <p class="text-gray-500 max-xl:text-base max-md:text-base max-sm:text-sm">
@@ -84,12 +84,12 @@ export default {
           techs: "JS, LARAVEL, PHP, BOOTSTRAP",
         },
         {
-          name: "ToDo List",
+          name: "WORLD",
           desc:
-            "ToDo List desenvolvida com VueJs e Json-Server como uma API fake. Com esta ferramenta, é possível adicionar, editar, marcar como concluída e excluir tarefas com facilidade.",
-          linkDeploy: "https://github.com/paulopariz/ToDoList",
-          linkGithub: "https://github.com/paulopariz/ToDoList",
-          techs: "VUE, VUEX, JS, TAILWIND",
+            "Este projeto foi construído utilizando uma API para coletar dados de 250 países. É possível realizar uma pesquisa por país específico e também filtrar os resultados por região: África, Américas, Ásia, Europa e Oceania",
+          linkDeploy: "https://world-paises.vercel.app/",
+          linkGithub: "https://github.com/paulopariz/WORLD",
+          techs: "VUE, JS, TAILWIND, API-REST",
         },
         {
           name: "app-clima-tempo",
@@ -108,7 +108,7 @@ export default {
           techs: "VUE, JS, PHP, LARAVEL, TAILWIND",
         },
         {
-          name: "Landing-Page-NFT",
+          name: "Page-NFT",
           desc:
             "Landing page desenvolvida com VueJS, a base de seus componentes, garantindo que o layout seja totalmente responsivo, adaptando-se perfeitamente a qualquer dispositivo.",
           linkDeploy: "https://landing-page-nft-alpha.vercel.app/",
@@ -116,12 +116,12 @@ export default {
           techs: "VUE, SASS, FIGMA",
         },
         {
-          name: "IMC",
+          name: "Builder",
           desc:
-            "Para calcular o seu IMC, basta inserir sua altura e peso nos campos indicados. Em seguida, confira a tabela disponível para identificar a sua classificação de acordo com o resultado obtido.",
-          linkDeploy: "https://imc-rosy.vercel.app/",
-          linkGithub: "https://github.com/paulopariz/IMC",
-          techs: "JS, VUE, BOOTSTRAP",
+            "Este projeto tem como objetivo ser um editor de páginas, permitindo a realização de pequenas simulações de edição.",
+          linkDeploy: "https://builder-pageapp.vercel.app/",
+          linkGithub: "https://github.com/paulopariz/Builder",
+          techs: "JS, VUE, TAILWIND",
         },
       ],
     };
