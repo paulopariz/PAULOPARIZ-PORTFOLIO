@@ -1,6 +1,6 @@
 <template>
   <nav class="fixed z-50 -top-2 w-full pt-9 pb-16 px-6">
-    <ul
+    <div
       class="font-sfera container m-auto justify-between flex items-center gap-14 max-lg:gap-9"
     >
       <div><p class="hidden text-transparent">P</p></div>
@@ -32,7 +32,7 @@
           </button>
         </div>
       </div>
-    </ul>
+    </div>
   </nav>
   <div
     v-show="menu"

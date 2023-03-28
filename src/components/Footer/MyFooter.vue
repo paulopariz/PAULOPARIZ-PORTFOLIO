@@ -13,17 +13,19 @@
       </div>
 
       <div>
-        <ul
-          class="flex items-center gap-8 max-lg:grid max-lg:grid-cols-2 max-md:flex max-md:gap-10 max-sm:hidden"
-        >
-          <a
-            v-for="obj in socias"
-            :key="obj"
-            class="relative before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-focusBorder before:transition hover:before:scale-100"
-            :href="obj.link"
-            target="_blank"
-            >{{ obj.name }}</a
+        <ul>
+          <li
+            class="flex items-center gap-8 max-lg:grid max-lg:grid-cols-2 max-md:flex max-md:gap-10 max-sm:hidden"
           >
+            <a
+              v-for="obj in socias"
+              :key="obj"
+              class="relative before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-focusBorder before:transition hover:before:scale-100"
+              :href="obj.link"
+              target="_blank"
+              >{{ obj.name }}</a
+            >
+          </li>
         </ul>
       </div>
     </footer>

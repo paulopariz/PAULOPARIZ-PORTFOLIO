@@ -4,7 +4,7 @@
       class="fixed z-50 top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 flex items-center w-full h-full bg-[#080808]"
     >
       <h1
-        class="animate__animated animate__fadeIn font-sfera text-3xl max-sm:text-xl max-mn:text-lg m-auto w-full text-center"
+        class="font-sfera text-3xl max-sm:text-xl max-mn:text-lg m-auto w-full text-center"
       >
         PAULO <span>PARIZ</span>
 

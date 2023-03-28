@@ -73,7 +73,7 @@ export default {
       document.body.style.overflow = "auto";
       this.loading = false;
       this.content = true;
-    }, 5500);
+    }, 4300);
   },
 };
 </script>
@@ -129,6 +129,6 @@ body {
 }
 
 .showContent {
-  --animate-delay: 6.3s;
+  --animate-delay: 4.4s;
 }
 </style>

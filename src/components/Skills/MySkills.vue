@@ -51,7 +51,7 @@
             <div
               class="tech flex-shrink-0 w-28 h-28 inline-flex items-center justify-center"
             >
-              <img :src="obj.icon" class="w-12" alt="" />
+              <img :src="obj.icon" :alt="obj.tech" />
             </div>
             <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
               <h2
@@ -59,7 +59,7 @@
               >
                 {{ obj.tech }}
               </h2>
-              <p class="leading-relaxed text-gray-500 max-sm:text-xs">
+              <p class="leading-relaxed text-gray-500 text-[15px] max-sm:text-[9px]">
                 {{ obj.desc }}
               </p>
             </div>
@@ -87,7 +87,7 @@
             <div
               class="tech flex-shrink-0 w-28 h-28 inline-flex items-center justify-center"
             >
-              <img :src="obj.icon" class="w-12" alt="" />
+              <img :src="obj.icon" :alt="obj.tech" />
             </div>
             <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
               <h2
@@ -95,7 +95,7 @@
               >
                 {{ obj.tech }}
               </h2>
-              <p class="leading-relaxed text-gray-600 max-sm:text-xs">
+              <p class="leading-relaxed text-gray-500 text-[15px] max-sm:text-[9px]">
                 {{ obj.desc }}
               </p>
             </div>
@@ -136,7 +136,7 @@ export default {
           icon: require("../../assets/img/iconCss.svg"),
           tech: "CSS",
           desc:
-            "CSS é uma linguagem de marcação utilizada para descrever a apresentação de documentos escritos em HTML, ou seja, a aparência visual de uma página da web. O CSS permite definir o layout, as cores, as fontes e outros aspectos visuais de um site de forma separada do conteúdo em si.",
+            "CSS é uma linguagem utilizada para estilizar documentos HTML. Com o CSS, é possível definir as cores, fontes, espaçamentos e posicionamentos dos elementos de uma página web.",
         },
         {
           position: "03",
@@ -164,7 +164,7 @@ export default {
           icon: require("../../assets/img/iconTailwind.svg"),
           tech: "Tailwindcss",
           desc:
-            "Assim como o Boostrap, Tailwind é um framework CSS que oferece a possibilidade de você criar layouts usando uma estrutura de CSS pronta. Isso permite que você otimize o tempo de criação de uma UI sem precisar fazer tudo manualmente.",
+            "Tailwind é um framework CSS similar ao Bootstrap, que fornece uma estrutura pronta para criar layouts de UI mais rapidamente. Ele é útil para economizar tempo e evitar a necessidade de escrever CSS manualmente.",
         },
         {
           position: "07",
