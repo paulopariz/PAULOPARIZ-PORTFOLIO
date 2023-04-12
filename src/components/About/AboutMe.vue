@@ -58,7 +58,7 @@ export default {
       about: [
         {
           position: "01",
-          desc: "Me chamo Paulo, tenho 18 anos, sou Desenvolvedor Front-End",
+          desc: "Me chamo Paulo, tenho 19 anos, sou Desenvolvedor Front-End",
         },
         {
           position: "02",
