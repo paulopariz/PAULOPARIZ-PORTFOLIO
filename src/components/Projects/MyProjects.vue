@@ -92,12 +92,12 @@ export default {
           techs: "VUE, JS, TAILWIND, API-REST",
         },
         {
-          name: "app-clima-tempo",
+          name: "QR-Scan",
           desc:
-            "Aplicativo meteorológico que permite verificar as condições climáticas de diversas cidades em todo o mundo. Ele utiliza a API OpenWeatherAPI para retornar as informaçoẽs como: temperatura, umidade, velocidade do vento.",
-          linkDeploy: "https://app-clima-tempo-ten.vercel.app/",
-          linkGithub: "https://github.com/paulopariz/app-clima-tempo",
-          techs: "HTML, CSS, JS",
+            "Com o QR-Scan, você pode criar e escanear QR Codes de forma rápida e fácil. Use-o para gerar QR Codes para suas redes sociais favoritas, como Instagram, Twitter, LinkedIn, ou mesmo para seu site pessoal.",
+          linkDeploy: "https://app-qr-scan.vercel.app/",
+          linkGithub: "https://github.com/paulopariz/QR-Scan",
+          techs: "VUE, TAILWIND, FIGMA",
         },
         {
           name: "redirect-links",
