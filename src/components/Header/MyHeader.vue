@@ -55,7 +55,7 @@
 </template>
 
 <script>
-import api from "../../api/users/user";
+import api from "@/api/user";
 import spinnerBtn from "../spinner/spinnerBtn.vue";
 
 export default {
