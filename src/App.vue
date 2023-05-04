@@ -1,30 +1,24 @@
 <template>
-  <div v-show="loading">
-    <MyLoading />
-  </div>
-
-  <div
-    v-show="content"
-    class="animate__animated animate__fadeIn animate__delay-1s showContent"
-  >
-    <NavBar />
-
-    <MyHeader />
-
-    <MySociais />
-
-    <div class="container m-auto">
-      <AboutMe />
-
-      <MySkills />
-
-      <MyProjects />
-
-      <MyContact />
+  <main>
+    <div v-show="loading">
+      <MyLoading />
     </div>
-
-    <MyFooter />
-  </div>
+    <div
+      v-show="content"
+      class="animate__animated animate__fadeIn animate__delay-1s showContent"
+    >
+      <NavBar />
+      <MyHeader />
+      <MySociais />
+      <div class="container m-auto">
+        <AboutMe />
+        <MySkills />
+        <MyProjects />
+        <MyContact />
+      </div>
+      <MyFooter />
+    </div>
+  </main>
 </template>
 
 <script>

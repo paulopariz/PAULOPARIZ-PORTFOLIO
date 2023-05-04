@@ -1,5 +1,4 @@
 <template>
-  <div>
     <footer
       class="h-40 mt-56 flex justify-between items-center px-32 max-md:flex-col max-md:py-4 max-sm:h-20"
     >
@@ -29,7 +28,6 @@
         </ul>
       </div>
     </footer>
-  </div>
 </template>
 
 <script>
