@@ -5,9 +5,15 @@
 @font-face {
     font-family: chopsic;
     src: url(../fonts/Chopsic.otf);
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
 }
 
 @font-face {
     font-family: sfera;
     src: url(../fonts/Sfera.ttf);
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
 }

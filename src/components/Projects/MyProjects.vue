@@ -36,7 +36,7 @@
               target="_blank"
               :href="obj.linkGithub"
             >
-              <img src="../../assets/img/icongithub.svg" alt="GitHub" />
+              <img src="../../assets/img/icongithub.svg" alt="GitHub" class="w-7 h-7" />
             </a>
 
             <a
@@ -45,7 +45,7 @@
               target="_blank"
               :href="obj.linkDeploy"
             >
-              <img src="../../assets/img/iconDeploy.svg" alt="Deploy" />
+              <img src="../../assets/img/iconDeploy.svg" alt="Deploy" class="w-5 h-5" />
             </a>
           </div>
         </div>

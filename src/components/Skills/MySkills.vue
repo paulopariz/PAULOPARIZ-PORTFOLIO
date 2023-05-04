@@ -49,9 +49,9 @@
             data-aos="fade-up"
           >
             <div
-              class="tech flex-shrink-0 w-28 h-28 inline-flex items-center justify-center"
+              class="tech flex-shrink-0 w-28  h-28 inline-flex items-center justify-center"
             >
-              <img :src="obj.icon" :alt="obj.tech" />
+              <img :src="obj.icon" :alt="obj.tech" class="w-12 h-12" />
             </div>
             <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
               <h2
@@ -87,7 +87,7 @@
             <div
               class="tech flex-shrink-0 w-28 h-28 inline-flex items-center justify-center"
             >
-              <img :src="obj.icon" :alt="obj.tech" />
+              <img :src="obj.icon" :alt="obj.tech" class="w-12 h-12 " />
             </div>
             <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
               <h2
