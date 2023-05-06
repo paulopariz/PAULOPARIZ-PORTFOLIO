@@ -9,17 +9,26 @@
     </h1>
 
     <div
-      class="mt-16 flex justify-center items-center gap-24 max-sm:gap-8 max-mn:gap-2 max-mn:flex-col"
+      class="mt-16 flex justify-center items-center gap-24 max-sm:gap-5 max-mn:gap-2 max-mn:flex-col"
       data-aos="fade-up"
       data-aos-anchor-placement="center-bottom"
     >
-      <button @click="clickOpenFront" class="flex items-center gap-9">
+      <button
+        @click="clickOpenFront"
+        class="flex items-center"
+        :class="{ btnFrontActive: this.openFront === true }"
+      >
         {{ nameBtnFront }}
         <div v-show="spinnerFront">
           <spinnerBtn />
         </div>
       </button>
-      <button @click="clickOpenBack" class="flex items-center gap-3">
+
+      <button
+        @click="clickOpenBack"
+        class="flex items-center"
+        :class="{ btnBackActive: this.openBack === true }"
+      >
         {{ nameBtnBack }}
         <div v-show="spinnerBack">
           <spinnerBtn />
@@ -49,7 +58,7 @@
             data-aos="fade-up"
           >
             <div
-              class="tech flex-shrink-0 w-28  h-28 inline-flex items-center justify-center"
+              class="tech flex-shrink-0 w-28 h-28 inline-flex items-center justify-center"
             >
               <img :src="obj.icon" :alt="obj.tech" class="w-12 h-12" />
             </div>
@@ -87,7 +96,7 @@
             <div
               class="tech flex-shrink-0 w-28 h-28 inline-flex items-center justify-center"
             >
-              <img :src="obj.icon" :alt="obj.tech" class="w-12 h-12 " />
+              <img :src="obj.icon" :alt="obj.tech" class="w-12 h-12" />
             </div>
             <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
               <h2

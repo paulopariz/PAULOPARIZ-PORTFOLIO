@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     width: 200px;
+    height: 40px;
     font-family: sfera;
     letter-spacing: 1px;
     font-size: 14px;
@@ -20,7 +21,7 @@
     &:focus {
         background-color: $primary-color;
         border-image: none;
-        border: 2px $primary-color solid;
+        border: 2px $primary-color;
     }
 
 

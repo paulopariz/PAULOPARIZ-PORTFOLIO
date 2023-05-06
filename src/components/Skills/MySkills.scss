@@ -6,7 +6,16 @@ h1 {
 }
 
 button {
-    @include btn
+    @include btn;
+    @media(max-width: 642px){
+        font-size: 9px;
+    }
+}
+
+.btnFrontActive, .btnBackActive{
+    background-color: $primary-color;
+    border-image: none;
+    border: 2px $primary-color;
 }
 
 section {
