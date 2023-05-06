@@ -37,6 +37,7 @@
   <div
     v-show="menu"
     class="menu w-full fixed z-30 animate__animated animate__slideInDown"
+    :class="{ animate__slideOutUp }"
   >
     <div
       class="links flex h-96 flex-col justify-between max-sm:justify-center max-sm:gap-10 animate__animated animate__fadeIn"
@@ -61,6 +62,7 @@ export default {
   data() {
     return {
       menu: false,
+      animate__slideOutUp: false,
 
       x: true,
       y: false,
@@ -98,9 +100,14 @@ export default {
     },
 
     closeMenu() {
-      this.menu = false;
-      this.y = false;
-      this.x = true;
+      this.animate__slideOutUp = true;
+
+      setTimeout(() => {
+        this.menu = false;
+        this.y = false;
+        this.x = true;
+        this.animate__slideOutUp = false;
+      }, 900);
     },
 
     closeLinks() {
