@@ -28,30 +28,8 @@
 </template>
 
 <script>
-// import moment from "moment";
-
 export default {
   name: "AboutMe",
-
-  setup() {
-    const initialDate = new Date("06/01/2022");
-    const currentDate = new Date();
-    const milliseconds = currentDate - initialDate;
-    const diffSegundos = milliseconds / 1000;
-    const minutes = diffSegundos / 60;
-    const hours = minutes / 60;
-    const days = hours / 24;
-    const months = Math.round(days / 30);
-
-    const date = new Date();
-    const formatDate = date.toLocaleString();
-
-    console.log(formatDate);
-
-    return { months };
-  },
-
-  methods: {},
 
   data() {
     return {
@@ -62,7 +40,7 @@ export default {
         },
         {
           position: "02",
-          desc: "Começei a programar há mais de " + this.months + " meses.",
+          desc: "Começei a programar há mais de 1 ano.",
         },
         {
           position: "03",
@@ -76,7 +54,7 @@ export default {
         {
           position: "05",
           desc:
-            "Atualmente, estou estudando NuxtJS para expandir ainda mais minhas habilidades, e tenho interesse em aprender NodeJS",
+            "Atualmente, estou estudando NuxtJS e TypeScript para expandir ainda mais minhas habilidades, e tenho interesse em aprender NodeJS",
         },
       ],
     };
