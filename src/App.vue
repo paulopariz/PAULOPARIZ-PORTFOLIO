@@ -1,6 +1,6 @@
 <template>
   <main>
-    <div v-show="loading">
+    <!-- <div v-show="loading">
       <MyLoading />
     </div>
     <div
@@ -17,59 +17,64 @@
         <MyContact />
       </div>
       <MyFooter />
-    </div>
+    </div> -->
+    <h1
+      class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 text-3xl tracking-wider"
+    >
+      Desativado
+    </h1>
   </main>
 </template>
 
 <script>
-import AOS from "aos";
-import AboutMe from "./components/About/AboutMe.vue";
-import MyContact from "./components/Contact/MyContact.vue";
-import MyFooter from "./components/Footer/MyFooter.vue";
-import MyHeader from "./components/Header/MyHeader.vue";
-import NavBar from "./components/NavBar/NavBar.vue";
-import MyProjects from "./components/Projects/MyProjects.vue";
-import MySociais from "./components/Sociais/MySociais.vue";
-import MySkills from "./components/Skills/MySkills.vue";
-import MyLoading from "./components/Loading/MyLoading.vue";
+// import AOS from "aos";
+// import AboutMe from "./components/About/AboutMe.vue";
+// import MyContact from "./components/Contact/MyContact.vue";
+// import MyFooter from "./components/Footer/MyFooter.vue";
+// import MyHeader from "./components/Header/MyHeader.vue";
+// import NavBar from "./components/NavBar/NavBar.vue";
+// import MyProjects from "./components/Projects/MyProjects.vue";
+// import MySociais from "./components/Sociais/MySociais.vue";
+// import MySkills from "./components/Skills/MySkills.vue";
+// import MyLoading from "./components/Loading/MyLoading.vue";
 
-export default {
-  name: "App",
-  components: {
-    NavBar,
-    MyHeader,
-    MySociais,
-    AboutMe,
-    MyProjects,
-    MyContact,
-    MyFooter,
-    MySkills,
-    MyLoading,
-  },
+// export default {
+//   name: "App",
+//   components: {
+//     NavBar,
+//     MyHeader,
+//     MySociais,
+//     AboutMe,
+//     MyProjects,
+//     MyContact,
+//     MyFooter,
+//     MySkills,
+//     MyLoading,
+//   },
 
-  data() {
-    return {
-      loading: false,
-      content: true,
-    };
-  },
+//   data() {
+//     return {
+//       loading: false,
+//       content: true,
+//     };
+//   },
 
-  mounted() {
-    AOS.init({
-      once: true,
-    });
-  },
+//   mounted() {
+//     AOS.init({
+//       once: true,
+//     });
+//   },
 
-  created: function () {
-    this.loading = true;
-    document.body.style.overflow = "hidden";
-    setTimeout(() => {
-      document.body.style.overflow = "auto";
-      this.loading = false;
-      this.content = true;
-    }, 4300);
-  },
-};
+//   created: function () {
+//     this.loading = true;
+//     document.body.style.overflow = "hidden";
+//     setTimeout(() => {
+//       document.body.style.overflow = "auto";
+//       this.loading = false;
+//       this.content = true;
+//     }, 4300);
+//   },
+// };
 </script>
 
 <style lang="scss">
