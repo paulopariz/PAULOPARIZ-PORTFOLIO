@@ -1,4 +1,4 @@
-<h2 align="center">PORTFÓLIO - PAULO PARIZ</h2>
+<h2 align="center">PORTFÓLIO - PAULO PARIZ(fora do ar)</h2>
 
 <br>
 
